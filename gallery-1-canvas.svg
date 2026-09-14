@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 550" width="100%" height="100%">
+  <defs>
+    <filter id="g1-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#3C332E" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="g1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0"/>
+      <stop offset="100%" stop-color="#EBE0D2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="650" height="550" fill="url(#g1-bg)"/>
+  <path d="M180 440 V 160 A 100 100 0 0 1 380 160 V 440 Z" fill="#E8DCD0" opacity="0.6"/>
+  <circle cx="450" cy="240" r="90" fill="#D9B7B2" opacity="0.3"/>
+
+  <ellipse cx="260" cy="430" rx="90" ry="18" fill="#3C332E" opacity="0.08"/>
+  <path d="M210 280 C200 350, 195 400, 220 425 C240 435, 280 435, 300 425 C325 400, 320 350, 310 280 Z" fill="#D6C4B7" filter="url(#g1-sh)"/>
+  <ellipse cx="260" cy="280" rx="50" ry="12" fill="#C2B0A2"/>
+  <path d="M260 270 Q280 180 310 110" stroke="#7A8B76" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="305" cy="120" rx="10" ry="5" fill="#8A9A86" transform="rotate(30 305 120)"/>
+
+  <g id="pouch" filter="url(#g1-sh)">
+    <path d="M300 340 C280 440, 310 470, 410 470 C510 470, 540 440, 520 340 C460 365, 360 365, 300 340 Z" fill="#F5EFE7"/>
+    <path d="M305 385 C360 410, 460 410, 515 385" stroke="#B98F8B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M315 425 C360 450, 460 450, 505 425" stroke="#C5AFA5" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M360 340 Q340 310 320 350" fill="none" stroke="#B98F8B" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="320" cy="350" r="5" fill="#C5A47E"/>
+  </g>
+
+  <text x="40" y="505" font-family="'Cormorant Garamond', serif" font-size="14" fill="#3C332E" letter-spacing="2">ÉTUDE NO. 05 — NATURE MORTE SUR TOILE</text>
+  <rect x="20" y="20" width="610" height="510" fill="none" stroke="#3C332E" stroke-width="1" opacity="0.12"/>
+</svg>

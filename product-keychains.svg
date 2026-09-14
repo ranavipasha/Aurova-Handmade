@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <filter id="kc-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#222222" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="500" fill="#FFFFFF"/>
+
+  <!-- Playful stars & doodles -->
+  <path d="M100 80 L110 100 L130 102 L115 115 L120 135 L100 122 L80 135 L85 115 L70 102 L90 100 Z" 
+        fill="#FFCA28" stroke="#F57C00" stroke-width="1.8"/>
+  <path d="M490 380 L498 396 L516 398 L502 410 L506 428 L490 418 L474 428 L478 410 L464 398 L482 396 Z" 
+        fill="#FFD54F" stroke="#FFA000" stroke-width="1.8"/>
+  <path d="M480 80 Q510 50 490 100 Q470 150 520 160" fill="none" stroke="#FFA726" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- CHARM 1: Handcrafted Crochet Cherry Keychain (Left) -->
+  <g id="cherry-charm" transform="translate(140, 90)" filter="url(#kc-sh)">
+    <!-- Golden Keyring & Split Ring -->
+    <circle cx="50" cy="40" r="24" fill="none" stroke="#D4AF37" stroke-width="4.5"/>
+    <circle cx="50" cy="70" r="10" fill="none" stroke="#D4AF37" stroke-width="3"/>
+    
+    <!-- Stems -->
+    <path d="M50 78 Q30 130 20 180" fill="none" stroke="#4CAF50" stroke-width="4" stroke-linecap="round"/>
+    <path d="M50 78 Q70 130 80 180" fill="none" stroke="#4CAF50" stroke-width="4" stroke-linecap="round"/>
+    <!-- Leaf -->
+    <ellipse cx="65" cy="115" rx="20" ry="9" fill="#81C784" stroke="#2E7D32" stroke-width="2" transform="rotate(30 65 115)"/>
+
+    <!-- Left Cherry -->
+    <circle cx="15" cy="195" r="28" fill="#E53935" stroke="#B71C1C" stroke-width="2.5"/>
+    <circle cx="8" cy="188" r="9" fill="#EF5350"/>
+    <circle cx="5" cy="185" r="3" fill="#FFFFFF"/>
+    <circle cx="15" cy="195" r="20" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+
+    <!-- Right Cherry -->
+    <circle cx="85" cy="195" r="28" fill="#C62828" stroke="#8E0000" stroke-width="2.5"/>
+    <circle cx="78" cy="188" r="9" fill="#E53935"/>
+    <circle cx="75" cy="185" r="3" fill="#FFFFFF"/>
+    <circle cx="85" cy="195" r="20" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+  </g>
+
+  <!-- CHARM 2: Handcrafted Crochet Strawberry Charm (Right) -->
+  <g id="strawberry-charm" transform="translate(360, 90)" filter="url(#kc-sh)">
+    <!-- Golden Keyring & Hook -->
+    <circle cx="50" cy="40" r="24" fill="none" stroke="#D4AF37" stroke-width="4.5"/>
+    <circle cx="50" cy="70" r="10" fill="none" stroke="#D4AF37" stroke-width="3"/>
+    <line x1="50" y1="80" x2="50" y2="120" stroke="#8D6E63" stroke-width="3.5"/>
+
+    <!-- Green Calyx Sepals -->
+    <path d="M25 125 L50 115 L75 125 L65 135 L50 128 L35 135 Z" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <ellipse cx="50" cy="115" rx="22" ry="6" fill="#81C784"/>
+
+    <!-- Strawberry Body -->
+    <path d="M20 130 C10 210, 50 260, 50 260 C50 260, 90 210, 80 130 Z" 
+          fill="#E53935" stroke="#B71C1C" stroke-width="2.5"/>
+
+    <!-- Embroidered White Seed Stitches -->
+    <circle cx="36" cy="150" r="2.5" fill="#FFFFFF"/>
+    <circle cx="64" cy="150" r="2.5" fill="#FFFFFF"/>
+    <circle cx="50" cy="170" r="2.5" fill="#FFFFFF"/>
+    <circle cx="35" cy="190" r="2.5" fill="#FFFFFF"/>
+    <circle cx="65" cy="190" r="2.5" fill="#FFFFFF"/>
+    <circle cx="50" cy="215" r="2.5" fill="#FFFFFF"/>
+    <circle cx="50" cy="240" r="2" fill="#FFFFFF"/>
+
+    <!-- Mini Daisy accent attached -->
+    <circle cx="65" cy="100" r="12" fill="#FFFFFF" stroke="#BCAAA4" stroke-width="1.5"/>
+    <circle cx="65" cy="100" r="6" fill="#FFCA28"/>
+  </g>
+</svg>

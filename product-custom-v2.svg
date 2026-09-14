@@ -1,0 +1,70 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 650" width="100%" height="100%">
+  <defs>
+    <filter id="ink-shadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#111111" flood-opacity="0.08"/>
+    </filter>
+    <radialGradient id="gold-grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="55%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </radialGradient>
+    <radialGradient id="coral-grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FF8A80"/>
+      <stop offset="60%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="650" fill="#FFFFFF"/>
+
+  <!-- Vintage studio circular stamp -->
+  <g transform="translate(100, 150)" opacity="0.4">
+    <circle cx="40" cy="40" r="36" fill="none" stroke="#222222" stroke-width="1.2" stroke-dasharray="2 3"/>
+    <text x="40" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" letter-spacing="1.5" fill="#222222" text-anchor="middle">AUROVA</text>
+    <text x="40" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#222222" text-anchor="middle">CUSTOM</text>
+    <text x="40" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1" fill="#222222" text-anchor="middle">BESPOKE</text>
+  </g>
+
+  <!-- CHUNKY FESTIVE CROCHET RAKHI & BESPOKE TALISMAN (Centerpiece) -->
+  <g id="rakhi-piece" transform="translate(100, 150)" filter="url(#ink-shadow)">
+    <!-- Silk & Golden Braided Cords -->
+    <path d="M-40 180 C40 160, 100 200, 150 180" fill="none" stroke="#C2185B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M250 180 C300 160, 360 200, 440 180" fill="none" stroke="#C2185B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-40 180 C40 160, 100 200, 150 180" fill="none" stroke="#FFD54F" stroke-width="2" stroke-dasharray="5 5"/>
+    <path d="M250 180 C300 160, 360 200, 440 180" fill="none" stroke="#FFD54F" stroke-width="2" stroke-dasharray="5 5"/>
+
+    <!-- Wooden & Brass Beads -->
+    <circle cx="40" cy="172" r="11" fill="url(#gold-grad)" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="90" cy="186" r="9" fill="#FFFDF8" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="310" cy="174" r="9" fill="#FFFDF8" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="360" cy="184" r="11" fill="url(#gold-grad)" stroke="#1A1A1A" stroke-width="2"/>
+
+    <!-- Central Chunky Crochet Medallion -->
+    <!-- Outer scalloped bobble ring -->
+    <circle cx="200" cy="180" r="75" fill="url(#coral-grad)" stroke="#1A1A1A" stroke-width="3"/>
+    
+    <!-- Chunky Bobbles surrounding rosette -->
+    <g fill="#FF8A80" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round">
+      <circle cx="200" cy="105" r="14"/><circle cx="253" cy="127" r="14"/>
+      <circle cx="275" cy="180" r="14"/><circle cx="253" cy="233" r="14"/>
+      <circle cx="200" cy="255" r="14"/><circle cx="147" cy="233" r="14"/>
+      <circle cx="125" cy="180" r="14"/><circle cx="147" cy="127" r="14"/>
+    </g>
+
+    <!-- Inner Ivory Rosette -->
+    <circle cx="200" cy="180" r="48" fill="#FFFDF8" stroke="#1A1A1A" stroke-width="2.5"/>
+    <circle cx="200" cy="180" r="32" fill="url(#gold-grad)" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="200" cy="180" r="15" fill="#E53935" stroke="#1A1A1A" stroke-width="1.8"/>
+    <circle cx="196" cy="176" r="3" fill="#FFFFFF"/>
+
+    <!-- Tassel Fringes at extremities -->
+    <g stroke="#C2185B" stroke-width="3" stroke-linecap="round">
+      <line x1="-40" y1="180" x2="-65" y2="168"/>
+      <line x1="-40" y1="180" x2="-70" y2="180"/>
+      <line x1="-40" y1="180" x2="-65" y2="192"/>
+      <line x1="440" y1="180" x2="465" y2="168"/>
+      <line x1="440" y1="180" x2="470" y2="180"/>
+      <line x1="440" y1="180" x2="465" y2="192"/>
+    </g>
+  </g>
+</svg>

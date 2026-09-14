@@ -1,0 +1,81 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 650" width="100%" height="100%">
+  <defs>
+    <filter id="ink-shadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#111111" flood-opacity="0.08"/>
+    </filter>
+    <radialGradient id="pot-terracotta" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFAB91"/>
+      <stop offset="60%" stop-color="#E64A19"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <radialGradient id="succulent-green" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#A5D6A7"/>
+      <stop offset="60%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="650" fill="#FFFFFF"/>
+
+  <!-- Vintage studio circular stamp -->
+  <g transform="translate(100, 150)" opacity="0.4">
+    <circle cx="40" cy="40" r="36" fill="none" stroke="#222222" stroke-width="1.2" stroke-dasharray="2 3"/>
+    <text x="40" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" letter-spacing="1.5" fill="#222222" text-anchor="middle">AUROVA</text>
+    <text x="40" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#222222" text-anchor="middle">CAR DÉCOR</text>
+    <text x="40" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1" fill="#222222" text-anchor="middle">HANDCRAFTED</text>
+  </g>
+
+  <!-- CHUNKY HANGING CAR MIRROR CHARM (Potted Hanging Plant / Flower) -->
+  <g id="car-charm" transform="translate(200, 60)" filter="url(#ink-shadow)">
+    <!-- Hanging Loop Cord & Wooden Bead -->
+    <path d="M100 20 L100 160" stroke="#8D6E63" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="100" cy="110" r="10" fill="#D7CCC8" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="100" cy="135" r="7" fill="#BCAAA4" stroke="#1A1A1A" stroke-width="1.8"/>
+
+    <!-- Macrame / Braided Hanging Pot Slings -->
+    <path d="M100 160 L50 250 M100 160 L150 250 M100 160 L100 250" stroke="#8D6E63" stroke-width="3"/>
+
+    <!-- Chunky Crochet Terracotta Pot Body -->
+    <path d="M45 250 C40 330, 60 360, 100 360 C140 360, 160 330, 155 250 Z" 
+          fill="url(#pot-terracotta)" stroke="#1A1A1A" stroke-width="2.8"/>
+    <!-- Chunky Rim Bobbles -->
+    <g fill="#FF8A65" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round">
+      <ellipse cx="52" cy="250" rx="14" ry="9"/>
+      <ellipse cx="76" cy="252" rx="14" ry="9"/>
+      <ellipse cx="100" cy="253" rx="14" ry="9"/>
+      <ellipse cx="124" cy="252" rx="14" ry="9"/>
+      <ellipse cx="148" cy="250" rx="14" ry="9"/>
+    </g>
+
+    <!-- Adorable Hanging Vines / Succulent Tendrils Draping Down -->
+    <g id="trailing-vines">
+      <!-- Tendril 1 (Left) -->
+      <path d="M60 255 Q35 320 45 380 Q55 420 40 450" fill="none" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="45" cy="300" r="8" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="40" cy="340" r="9" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="46" cy="385" r="9" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="42" cy="430" r="8" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+
+      <!-- Tendril 2 (Center) -->
+      <path d="M100 255 Q105 340 100 410 Q95 460 102 490" fill="none" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="103" cy="290" r="8" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="102" cy="330" r="9" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="100" cy="380" r="9" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="98" cy="430" r="9" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="102" cy="475" r="8" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+
+      <!-- Tendril 3 (Right) -->
+      <path d="M140 255 Q165 320 155 380 Q145 420 155 450" fill="none" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="152" cy="300" r="8" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="158" cy="340" r="9" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="154" cy="385" r="9" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="150" cy="430" r="8" fill="url(#succulent-green)" stroke="#1A1A1A" stroke-width="1.8"/>
+    </g>
+
+    <!-- Sweet Handcrafted Blossom On Pot -->
+    <g transform="translate(100, 290)">
+      <circle cx="0" cy="0" r="14" fill="#FFFDF8" stroke="#1A1A1A" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="7" fill="#FFCA28" stroke="#1A1A1A" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 650" width="100%" height="100%">
+  <defs>
+    <filter id="bag-sh" x="-10%" y="-10%" width="125%" height="135%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#3C332E" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="bags-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5EE"/>
+      <stop offset="100%" stop-color="#EFE6D8"/>
+    </linearGradient>
+    <pattern id="stitch-ribs" width="14" height="24" patternUnits="userSpaceOnUse">
+      <path d="M2 0 V 24 M7 0 V 24 M12 0 V 24" stroke="#BFA89E" stroke-width="1.2" opacity="0.4"/>
+      <circle cx="7" cy="12" r="1.5" fill="#B98F8B" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="750" height="650" fill="url(#bags-bg)"/>
+  <path d="M240 540 V 170 A 130 130 0 0 1 500 170 V 540 Z" fill="#E8DED1" opacity="0.6"/>
+  <circle cx="560" cy="280" r="110" fill="#D9B7B2" opacity="0.25"/>
+  <ellipse cx="370" cy="535" rx="180" ry="24" fill="#3C332E" opacity="0.1"/>
+
+  <g id="slouch-bag" filter="url(#bag-sh)">
+    <path d="M270 280 C270 90, 470 90, 470 280" fill="none" stroke="#CBB3A8" stroke-width="16" stroke-linecap="round"/>
+    <path d="M270 280 C270 90, 470 90, 470 280" fill="none" stroke="#FAF6F1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M270 280 C270 90, 470 90, 470 280" fill="none" stroke="#B98F8B" stroke-width="2.5" stroke-dasharray="5 5"/>
+
+    <path d="M210 300 C195 440, 240 525, 370 525 C500 525, 545 440, 530 300 C470 340, 270 340, 210 300 Z" fill="#FAF4EC"/>
+    <path d="M210 300 C195 440, 240 525, 370 525 C500 525, 545 440, 530 300 C470 340, 270 340, 210 300 Z" fill="url(#stitch-ribs)"/>
+
+    <path d="M222 410 C270 450, 470 450, 518 410 L522 445 C470 490, 270 490, 218 445 Z" fill="#D9B7B2" opacity="0.85"/>
+    <path d="M236 460 C270 495, 470 495, 504 460 L508 485 C470 520, 270 520, 232 485 Z" fill="#B98F8B" opacity="0.9"/>
+
+    <path d="M210 300 Q235 315 260 305 Q285 320 310 310 Q335 325 360 315 Q385 325 410 315 Q435 325 460 310 Q485 320 510 305 Q520 305 530 300" fill="none" stroke="#B98F8B" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(190, 490)" filter="url(#bag-sh)">
+    <circle cx="0" cy="0" r="22" fill="#D2B4A6"/>
+    <circle cx="0" cy="0" r="14" fill="#FAF5EE"/>
+    <circle cx="0" cy="0" r="6" fill="#3C332E"/>
+    <line x1="0" y1="20" x2="-35" y2="40" stroke="#7A6D65" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <text x="50" y="600" font-family="'Cormorant Garamond', serif" font-size="16" fill="#3C332E" letter-spacing="3">AUROVA · ÉTUDE DE SACS</text>
+  <text x="50" y="618" font-family="'DM Sans', sans-serif" font-size="10" fill="#88786F" letter-spacing="1.5">NO. 01 — SAC BOHÈME EN COTON NATUREL</text>
+  <rect x="25" y="25" width="700" height="600" fill="none" stroke="#3C332E" stroke-width="1" opacity="0.12"/>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <filter id="fl-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#222222" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="500" fill="#FFFFFF"/>
+
+  <!-- Playful stars & doodles -->
+  <path d="M480 80 L488 98 L508 100 L494 112 L498 132 L480 120 L462 132 L466 112 L452 100 L472 98 Z" 
+        fill="#FFD54F" stroke="#FFA000" stroke-width="1.8"/>
+  <path d="M100 380 L108 395 L124 397 L112 408 L116 424 L100 415 L84 424 L88 408 L76 397 L92 395 Z" 
+        fill="#FFCA28" stroke="#F57C00" stroke-width="1.8"/>
+
+  <!-- Golden egg doodle on left (from user reference) -->
+  <g transform="translate(70, 70)" filter="url(#fl-sh)">
+    <path d="M30 8 C48 6, 62 16, 65 32 C68 48, 55 62, 38 60 C20 58, 8 50, 7 35 C6 20, 15 10, 30 8 Z" 
+          fill="#F7F7F7" stroke="#E0DACB" stroke-width="2"/>
+    <circle cx="36" cy="34" r="14" fill="#FF9E1B"/>
+    <circle cx="32" cy="30" r="3" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+
+  <!-- HANDMADE CROCHET BOTANICAL BOUQUET (Centerpiece) -->
+  <g id="flower-bouquet" transform="translate(180, 50)" filter="url(#fl-sh)">
+    
+    <!-- Botanical Stems -->
+    <path d="M120 220 Q110 320 100 400" stroke="#4CAF50" stroke-width="5" stroke-linecap="round"/>
+    <path d="M60 220 Q90 320 120 400" stroke="#4CAF50" stroke-width="5" stroke-linecap="round"/>
+    <path d="M180 220 Q140 320 110 400" stroke="#4CAF50" stroke-width="5" stroke-linecap="round"/>
+    <path d="M140 220 Q120 320 115 400" stroke="#4CAF50" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Stem leaves -->
+    <ellipse cx="70" cy="290" rx="18" ry="8" fill="#81C784" stroke="#388E3C" stroke-width="1.5" transform="rotate(-35 70 290)"/>
+    <ellipse cx="160" cy="300" rx="18" ry="8" fill="#81C784" stroke="#388E3C" stroke-width="1.5" transform="rotate(35 160 300)"/>
+
+    <!-- Big Handcrafted Crochet Rose (Center) -->
+    <g transform="translate(120, 160)">
+      <circle cx="0" cy="0" r="45" fill="#F48FB1" stroke="#C2185B" stroke-width="3"/>
+      <!-- Layered petal ripples -->
+      <path d="M-35 -12 C-40 -30, -18 -42, 0 -36 C18 -42, 40 -30, 35 -12 C40 12, 24 36, 0 38 C-24 36, -40 12, -35 -12 Z" 
+            fill="#F06292" stroke="#C2185B" stroke-width="2"/>
+      <circle cx="0" cy="0" r="24" fill="#F8BBD0"/>
+      <circle cx="0" cy="0" r="14" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="6" fill="#C2185B"/>
+    </g>
+
+    <!-- Handcrafted White & Yellow Daisy (Left) -->
+    <g transform="translate(50, 120)">
+      <!-- Petals -->
+      <ellipse cx="-20" cy="0" rx="18" ry="8" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <ellipse cx="20" cy="0" rx="18" ry="8" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <ellipse cx="0" cy="-20" rx="8" ry="18" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <ellipse cx="0" cy="20" rx="8" ry="18" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <ellipse cx="-14" cy="-14" rx="16" ry="8" transform="rotate(45 -14 -14)" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <ellipse cx="14" cy="14" rx="16" ry="8" transform="rotate(45 14 14)" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <ellipse cx="14" cy="-14" rx="16" ry="8" transform="rotate(-45 14 -14)" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <ellipse cx="-14" cy="14" rx="16" ry="8" transform="rotate(-45 -14 14)" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="1.8"/>
+      <!-- Golden Center -->
+      <circle cx="0" cy="0" r="15" fill="#FFCA28" stroke="#F57C00" stroke-width="2"/>
+      <circle cx="0" cy="0" r="9" fill="#FF8F00"/>
+    </g>
+
+    <!-- Crochet Lavender Sprig (Right) -->
+    <g transform="translate(190, 100)">
+      <path d="M0 -30 V 100" stroke="#4CAF50" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Stacked purple bobble stitches -->
+      <ellipse cx="-8" cy="-20" rx="11" ry="8" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(-20 -8 -20)"/>
+      <ellipse cx="8" cy="-12" rx="11" ry="8" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(20 8 -12)"/>
+      <ellipse cx="-9" cy="0" rx="12" ry="9" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(-20 -9 0)"/>
+      <ellipse cx="9" cy="8" rx="12" ry="9" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(20 9 8)"/>
+      <ellipse cx="-10" cy="20" rx="12" ry="9" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(-20 -10 20)"/>
+      <ellipse cx="10" cy="28" rx="12" ry="9" fill="#CE93D8" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(20 10 28)"/>
+      <ellipse cx="-10" cy="40" rx="13" ry="9" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(-20 -10 40)"/>
+      <ellipse cx="10" cy="48" rx="13" ry="9" fill="#BA68C8" stroke="#7B1FA2" stroke-width="1.5" transform="rotate(20 10 48)"/>
+    </g>
+
+    <!-- Lovely Hand-tied Soft Yarn Bow -->
+    <g transform="translate(110, 320)">
+      <!-- Left bow loop -->
+      <path d="M0 0 C-40 -30 -50 20 0 5 Z" fill="#FFE082" stroke="#FFB300" stroke-width="2.5"/>
+      <!-- Right bow loop -->
+      <path d="M0 0 C40 -30 50 20 0 5 Z" fill="#FFE082" stroke="#FFB300" stroke-width="2.5"/>
+      <!-- Center knot -->
+      <circle cx="0" cy="2" r="7" fill="#FFA000"/>
+      <!-- Tails -->
+      <path d="M-3 8 Q-20 40 -15 65" fill="none" stroke="#FFB300" stroke-width="3" stroke-linecap="round"/>
+      <path d="M3 8 Q20 40 18 65" fill="none" stroke="#FFB300" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

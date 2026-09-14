@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 400" width="100%" height="100%">
+  <defs>
+    <filter id="pr-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#222222" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="750" height="400" fill="#FFFFFF"/>
+
+  <!-- Playful stars & doodles -->
+  <path d="M60 50 L68 68 L88 70 L74 82 L78 102 L60 90 L42 102 L46 82 L32 70 L52 68 Z" 
+        fill="#FFD54F" stroke="#FFA000" stroke-width="1.8"/>
+  <path d="M680 50 L688 68 L708 70 L694 82 L698 102 L680 90 L662 102 L666 82 L652 70 L672 68 Z" 
+        fill="#FFCA28" stroke="#F57C00" stroke-width="1.8"/>
+
+  <!-- Connecting hand-drawn yarn thread line across steps -->
+  <path d="M120 180 C180 120, 240 240, 300 180 C360 120, 420 240, 480 180 C540 120, 600 240, 660 180" 
+        fill="none" stroke="#E0E0E0" stroke-width="3" stroke-dasharray="6 6"/>
+
+  <!-- STEP 1 ICON: Sketch & Idea (Left) -->
+  <g transform="translate(70, 110)" filter="url(#pr-sh)">
+    <rect x="0" y="0" width="100" height="130" rx="10" fill="#FFFDF9" stroke="#333333" stroke-width="2.5"/>
+    <line x1="20" y1="30" x2="80" y2="30" stroke="#757575" stroke-width="2"/>
+    <line x1="20" y1="50" x2="65" y2="50" stroke="#757575" stroke-width="2"/>
+    <circle cx="50" cy="85" r="20" fill="none" stroke="#E91E63" stroke-width="2" stroke-dasharray="3 3"/>
+    <circle cx="50" cy="85" r="6" fill="#FFCA28"/>
+  </g>
+
+  <!-- STEP 2 ICON: Yarn Skein & Color Palette (Mid-Left) -->
+  <g transform="translate(250, 120)" filter="url(#pr-sh)">
+    <ellipse cx="50" cy="60" rx="45" ry="34" fill="#F8BBD0" stroke="#C2185B" stroke-width="2.5"/>
+    <path d="M20 60 Q50 35 80 60" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M25 72 Q50 47 75 72" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Palette drops -->
+    <circle cx="20" cy="115" r="8" fill="#FFCA28"/>
+    <circle cx="50" cy="115" r="8" fill="#66BB6A"/>
+    <circle cx="80" cy="115" r="8" fill="#42A5F5"/>
+  </g>
+
+  <!-- STEP 3 ICON: Hands & Wooden Hook (Mid-Right) -->
+  <g transform="translate(430, 115)" filter="url(#pr-sh)">
+    <line x1="15" y1="110" x2="85" y2="20" stroke="#8D6E63" stroke-width="7" stroke-linecap="round"/>
+    <path d="M85 20 Q95 12 90 6 Q84 4 78 14" fill="none" stroke="#8D6E63" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Working crochet motif -->
+    <circle cx="45" cy="70" r="22" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+    <circle cx="45" cy="70" r="10" fill="#FFCA28"/>
+  </g>
+
+  <!-- STEP 4 ICON: Beautifully Packaged Gift Box (Right) -->
+  <g transform="translate(600, 110)" filter="url(#pr-sh)">
+    <rect x="10" y="30" width="90" height="90" rx="10" fill="#FAF4EF" stroke="#333333" stroke-width="2.5"/>
+    <!-- Ribbon -->
+    <rect x="48" y="30" width="14" height="90" fill="#E57373"/>
+    <rect x="10" y="68" width="90" height="14" fill="#E57373"/>
+    <!-- Bow -->
+    <path d="M55 30 C35 10 35 -10 55 10 Z" fill="#EF5350"/>
+    <path d="M55 30 C75 10 75 -10 55 10 Z" fill="#EF5350"/>
+    <circle cx="55" cy="20" r="5" fill="#C62828"/>
+  </g>
+</svg>

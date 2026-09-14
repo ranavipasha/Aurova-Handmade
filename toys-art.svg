@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 650" width="100%" height="100%">
+  <defs>
+    <filter id="toy-sh" x="-10%" y="-10%" width="125%" height="135%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#3C332E" flood-opacity="0.11"/>
+    </filter>
+    <linearGradient id="toys-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5EE"/>
+      <stop offset="100%" stop-color="#EFE6D8"/>
+    </linearGradient>
+    <radialGradient id="plush-body" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F4EDE3"/>
+      <stop offset="100%" stop-color="#E5D9CB"/>
+    </radialGradient>
+    <pattern id="spiral-stitch" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="2" fill="#BA9F95" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="750" height="650" fill="url(#toys-bg)"/>
+  <ellipse cx="375" cy="300" rx="180" ry="160" fill="#D9B7B2" opacity="0.25"/>
+  <ellipse cx="375" cy="330" rx="230" ry="190" fill="#E8DCD0" opacity="0.4"/>
+
+  <ellipse cx="375" cy="540" rx="170" ry="24" fill="#3C332E" opacity="0.1"/>
+  <path d="M260 520 L490 520 L470 560 L280 560 Z" fill="#DECBC0"/>
+  <ellipse cx="375" cy="520" rx="115" ry="18" fill="#EADCD2"/>
+
+  <g id="crochet-bunny" filter="url(#toy-sh)">
+    <path d="M310 240 C280 140, 240 100, 220 130 C200 160, 260 250, 300 270 Z" fill="url(#plush-body)"/>
+    <path d="M305 240 C280 150, 245 120, 230 140 C220 160, 270 240, 300 260 Z" fill="#D9B7B2" opacity="0.5"/>
+    <path d="M310 240 C280 140, 240 100, 220 130 C200 160, 260 250, 300 270 Z" fill="url(#spiral-stitch)"/>
+
+    <path d="M440 240 C470 140, 510 100, 530 130 C550 160, 490 250, 450 270 Z" fill="url(#plush-body)"/>
+    <path d="M445 240 C470 150, 505 120, 520 140 C530 160, 480 240, 450 260 Z" fill="#D9B7B2" opacity="0.5"/>
+    <path d="M440 240 C470 140, 510 100, 530 130 C550 160, 490 250, 450 270 Z" fill="url(#spiral-stitch)"/>
+
+    <circle cx="375" cy="425" r="95" fill="url(#plush-body)"/>
+    <circle cx="375" cy="425" r="95" fill="url(#spiral-stitch)"/>
+
+    <g id="neck-ruffle">
+      <path d="M290 350 Q310 330 330 350 Q350 330 370 350 Q390 330 410 350 Q430 330 450 350 Q470 330 460 365 Q440 380 420 365 Q400 380 380 365 Q360 380 340 365 Q320 380 300 365 Z" fill="#B98F8B"/>
+      <path d="M290 350 Q310 330 330 350 Q350 330 370 350 Q390 330 410 350 Q430 330 450 350" fill="none" stroke="#FAF5EE" stroke-width="2"/>
+    </g>
+
+    <circle cx="375" cy="285" r="82" fill="url(#plush-body)"/>
+    <circle cx="375" cy="285" r="82" fill="url(#spiral-stitch)"/>
+
+    <path d="M328 280 Q340 292 352 280" fill="none" stroke="#3C332E" stroke-width="3" stroke-linecap="round"/>
+    <line x1="334" y1="288" x2="330" y2="293" stroke="#3C332E" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <path d="M398 280 Q410 292 422 280" fill="none" stroke="#3C332E" stroke-width="3" stroke-linecap="round"/>
+    <line x1="416" y1="288" x2="420" y2="293" stroke="#3C332E" stroke-width="2.5" stroke-linecap="round"/>
+
+    <ellipse cx="330" cy="302" rx="14" ry="8" fill="#D9B7B2" opacity="0.65"/>
+    <ellipse cx="420" cy="302" rx="14" ry="8" fill="#D9B7B2" opacity="0.65"/>
+
+    <path d="M370 296 L380 296 L375 303 Z" fill="#B98F8B"/>
+    <path d="M375 303 V 312 M375 312 Q367 318 360 314 M375 312 Q383 318 390 314" fill="none" stroke="#3C332E" stroke-width="2.2" stroke-linecap="round"/>
+
+    <ellipse cx="320" cy="430" rx="22" ry="16" fill="url(#plush-body)"/>
+    <ellipse cx="430" cy="430" rx="22" ry="16" fill="url(#plush-body)"/>
+    <circle cx="375" cy="430" r="14" fill="#FFFFFF"/>
+    <circle cx="375" cy="430" r="6" fill="#D4A76A"/>
+  </g>
+
+  <text x="50" y="605" font-family="'Cormorant Garamond', serif" font-size="16" fill="#3C332E" letter-spacing="3">AUROVA · CONTES DE LAINE</text>
+  <text x="50" y="622" font-family="'DM Sans', sans-serif" font-size="10" fill="#88786F" letter-spacing="1.5">PELUCHES D'ART &amp; OBJETS HEIRLOOM</text>
+  <rect x="25" y="25" width="700" height="600" fill="none" stroke="#3C332E" stroke-width="1" opacity="0.12"/>
+</svg>

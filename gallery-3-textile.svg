@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 550" width="100%" height="100%">
+  <defs>
+    <filter id="g3-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#3C332E" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="g3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5EE"/>
+      <stop offset="100%" stop-color="#EDE2D4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="650" height="550" fill="url(#g3-bg)"/>
+
+  <g id="textile-collage" filter="url(#g3-sh)">
+    <rect x="140" y="110" width="240" height="260" rx="6" fill="#FFFDF9"/>
+    <g stroke="#D9C7BC" stroke-width="1.2" opacity="0.5">
+      <line x1="170" y1="110" x2="170" y2="370"/><line x1="200" y1="110" x2="200" y2="370"/>
+      <line x1="230" y1="110" x2="230" y2="370"/><line x1="260" y1="110" x2="260" y2="370"/>
+      <line x1="290" y1="110" x2="290" y2="370"/><line x1="320" y1="110" x2="320" y2="370"/>
+      <line x1="140" y1="150" x2="380" y2="150"/><line x1="140" y1="190" x2="380" y2="190"/>
+      <line x1="140" y1="230" x2="380" y2="230"/><line x1="140" y1="270" x2="380" y2="270"/>
+      <line x1="140" y1="310" x2="380" y2="310"/>
+    </g>
+
+    <path d="M280 180 L520 180 L520 420 L280 420 Z" fill="#D9B7B2" opacity="0.9"/>
+    <path d="M290 220 Q310 200 330 220 Q350 200 370 220 Q390 200 410 220 Q430 200 450 220 Q470 200 490 220 Q510 200 510 220" fill="none" stroke="#B98F8B" stroke-width="2.5"/>
+    <path d="M290 270 Q310 250 330 270 Q350 250 370 270 Q390 250 410 270 Q430 250 450 270 Q470 250 490 270 Q510 250 510 270" fill="none" stroke="#FAF5EE" stroke-width="2.5"/>
+    <path d="M290 320 Q310 300 330 320 Q350 300 370 320 Q390 300 410 320 Q430 300 450 320 Q470 300 490 320 Q510 300 510 320" fill="none" stroke="#B98F8B" stroke-width="2.5"/>
+    <path d="M290 370 Q310 350 330 370 Q350 350 370 370 Q390 350 410 370 Q430 350 450 370 Q470 350 490 370 Q510 350 510 370" fill="none" stroke="#FAF5EE" stroke-width="2.5"/>
+
+    <g stroke="#FAF5EE" stroke-width="2" stroke-linecap="round" opacity="0.95">
+      <line x1="290" y1="420" x2="285" y2="465"/><line x1="320" y1="420" x2="318" y2="470"/>
+      <line x1="350" y1="420" x2="352" y2="460"/><line x1="380" y1="420" x2="378" y2="475"/>
+      <line x1="410" y1="420" x2="415" y2="465"/><line x1="440" y1="420" x2="438" y2="470"/>
+      <line x1="470" y1="420" x2="472" y2="460"/><line x1="500" y1="420" x2="498" y2="468"/>
+    </g>
+  </g>
+
+  <text x="40" y="505" font-family="'Cormorant Garamond', serif" font-size="14" fill="#3C332E" letter-spacing="2">ÉTUDE NO. 07 — MACRO-COLLAGE TEXTILE ET FRANGES</text>
+  <rect x="20" y="20" width="610" height="510" fill="none" stroke="#3C332E" stroke-width="1" opacity="0.12"/>
+</svg>

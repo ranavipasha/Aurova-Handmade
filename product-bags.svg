@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <filter id="p-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#222222" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="500" fill="#FFFFFF"/>
+
+  <!-- Playful background doodles -->
+  <path d="M80 80 L90 102 L112 104 L95 119 L100 140 L80 128 L60 140 L65 119 L48 104 L70 102 Z" 
+        fill="#FFD54F" stroke="#FFA000" stroke-width="1.8"/>
+  <path d="M510 100 Q540 70 520 120 Q500 170 550 180" fill="none" stroke="#FFA726" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="510" cy="380" r="16" fill="#FF9800" stroke="#E65100" stroke-width="2"/>
+  <circle cx="510" cy="380" r="11" fill="#FFE0B2"/>
+
+  <!-- HANDMADE CROCHET TOTE BAG (Colored-pencil style) -->
+  <g id="bag-illustration" transform="translate(170, 70)" filter="url(#p-sh)">
+    <!-- Braided Straps -->
+    <path d="M50 120 C40 -20, 210 -20, 200 120" fill="none" stroke="#A1887F" stroke-width="14" stroke-linecap="round"/>
+    <path d="M50 120 C40 -20, 210 -20, 200 120" fill="none" stroke="#FAF4EF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M50 120 C40 -20, 210 -20, 200 120" fill="none" stroke="#8D6E63" stroke-width="2" stroke-dasharray="4 4"/>
+
+    <!-- Bag Body: Warm cream textured crochet -->
+    <path d="M30 130 C20 260, 40 330, 125 330 C210 330, 230 260, 220 130 Z" 
+          fill="#FAF3EB" stroke="#795548" stroke-width="3"/>
+
+    <!-- Crochet Stitch Grid Lines -->
+    <g stroke="#D7CCC8" stroke-width="2" stroke-dasharray="3 4">
+      <path d="M35 170 Q125 180 215 170"/>
+      <path d="M32 210 Q125 220 218 210"/>
+      <path d="M32 250 Q125 260 218 250"/>
+      <path d="M38 290 Q125 300 212 290"/>
+      <line x1="75" y1="135" x2="75" y2="320"/>
+      <line x1="125" y1="135" x2="125" y2="328"/>
+      <line x1="175" y1="135" x2="175" y2="320"/>
+    </g>
+
+    <!-- Warm Pastel Rose Striped Base Band -->
+    <path d="M33 240 C32 270, 45 328, 125 328 C205 328, 218 270, 217 240 Z" 
+          fill="#F8BBD0" stroke="#C2185B" stroke-width="2.5"/>
+    <path d="M33 240 Q125 250 217 240" fill="none" stroke="#C2185B" stroke-width="2"/>
+
+    <!-- Scalloped Top Edge -->
+    <path d="M30 130 Q45 120 60 130 Q75 120 90 130 Q105 120 120 130 Q135 120 150 130 Q165 120 180 130 Q195 120 210 130 Q215 125 220 130" 
+          fill="none" stroke="#C2185B" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Cute Handcrafted Crochet Daisy Patch on Bag -->
+    <g transform="translate(125, 220)">
+      <circle cx="0" cy="0" r="22" fill="#FFFFFF" stroke="#D7CCC8" stroke-width="2"/>
+      <circle cx="0" cy="0" r="11" fill="#FFCA28"/>
+      <circle cx="0" cy="0" r="5" fill="#FF8F00"/>
+    </g>
+
+    <!-- Hanging Cherry Charm on Handle -->
+    <g transform="translate(60, 130)">
+      <path d="M0 0 Q10 25 15 45" fill="none" stroke="#4CAF50" stroke-width="2.5"/>
+      <path d="M0 0 Q-5 25 -10 45" fill="none" stroke="#4CAF50" stroke-width="2.5"/>
+      <circle cx="16" cy="48" r="10" fill="#E53935" stroke="#B71C1C" stroke-width="1.5"/>
+      <circle cx="-11" cy="48" r="10" fill="#E53935" stroke="#B71C1C" stroke-width="1.5"/>
+      <ellipse cx="6" cy="18" rx="8" ry="4" fill="#81C784" transform="rotate(-35 6 18)"/>
+    </g>
+  </g>
+</svg>

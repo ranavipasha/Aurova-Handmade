@@ -1,0 +1,93 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 650" width="100%" height="100%">
+  <defs>
+    <filter id="ink-shadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#111111" flood-opacity="0.08"/>
+    </filter>
+    <radialGradient id="bunny-cream" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFBF5"/>
+      <stop offset="60%" stop-color="#F5EBE1"/>
+      <stop offset="100%" stop-color="#E2D4C5"/>
+    </radialGradient>
+    <radialGradient id="ruffle-pink" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FF8A80"/>
+      <stop offset="60%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#B71C1C"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="650" fill="#FFFFFF"/>
+
+  <!-- Vintage studio circular stamp -->
+  <g transform="translate(100, 160)" opacity="0.4">
+    <circle cx="40" cy="40" r="36" fill="none" stroke="#222222" stroke-width="1.2" stroke-dasharray="2 3"/>
+    <text x="40" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" letter-spacing="1.5" fill="#222222" text-anchor="middle">AUROVA</text>
+    <text x="40" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700" fill="#222222" text-anchor="middle">HEIRLOOM</text>
+    <text x="40" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1" fill="#222222" text-anchor="middle">TOYS</text>
+  </g>
+
+  <!-- CHUNKY AMIGURUMI BUNNY (Centerpiece) -->
+  <g id="chunky-bunny" transform="translate(170, 70)" filter="url(#ink-shadow)">
+    <!-- Floppy Bunny Ears with ink outline -->
+    <!-- Left Ear -->
+    <path d="M70 170 C35 40, -5 20, -15 45 C-25 75, 25 180, 60 195 Z" 
+          fill="url(#bunny-cream)" stroke="#1A1A1A" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M55 160 C30 60, 0 40, -5 55 C-10 75, 25 165, 48 180 Z" 
+          fill="#FFCDD2" stroke="#EF9A9A" stroke-width="1.5"/>
+
+    <!-- Right Ear -->
+    <path d="M190 170 C225 40, 265 20, 275 45 C285 75, 235 180, 200 195 Z" 
+          fill="url(#bunny-cream)" stroke="#1A1A1A" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M205 160 C230 60, 260 40, 265 55 C270 75, 235 165, 212 180 Z" 
+          fill="#FFCDD2" stroke="#EF9A9A" stroke-width="1.5"/>
+
+    <!-- Lower Body Sphere (Chunky single-crochet texture) -->
+    <circle cx="130" cy="340" r="105" fill="url(#bunny-cream)" stroke="#1A1A1A" stroke-width="2.8"/>
+    <g fill="none" stroke="#D7CCC8" stroke-width="2" stroke-dasharray="5 5">
+      <circle cx="130" cy="340" r="88"/>
+      <circle cx="130" cy="340" r="66"/>
+      <circle cx="130" cy="340" r="44"/>
+    </g>
+
+    <!-- Chunky Red Crochet Ruffled Collar (Tribute to reference red bag texture) -->
+    <g id="chunky-collar" fill="url(#ruffle-pink)" stroke="#1A1A1A" stroke-width="2.5" stroke-linejoin="round">
+      <ellipse cx="60" cy="245" rx="20" ry="14" transform="rotate(-20 60 245)"/>
+      <ellipse cx="85" cy="255" rx="20" ry="14"/>
+      <ellipse cx="115" cy="258" rx="20" ry="14"/>
+      <ellipse cx="145" cy="258" rx="20" ry="14"/>
+      <ellipse cx="175" cy="255" rx="20" ry="14"/>
+      <ellipse cx="200" cy="245" rx="20" ry="14" transform="rotate(20 200 245)"/>
+    </g>
+
+    <!-- Head Sphere -->
+    <circle cx="130" cy="190" r="85" fill="url(#bunny-cream)" stroke="#1A1A1A" stroke-width="2.8"/>
+    <circle cx="130" cy="190" r="70" fill="none" stroke="#D7CCC8" stroke-width="2" stroke-dasharray="5 5"/>
+
+    <!-- Sleepy Hand-Embroidered Features -->
+    <path d="M80 185 Q92 196 104 185" fill="none" stroke="#1A1A1A" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="88" y1="193" x2="85" y2="198" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+
+    <path d="M156 185 Q168 196 180 185" fill="none" stroke="#1A1A1A" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="172" y1="193" x2="175" y2="198" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Sweet Blushing Cheeks -->
+    <ellipse cx="82" cy="205" rx="14" ry="8" fill="#FF8A80" opacity="0.6"/>
+    <ellipse cx="178" cy="205" rx="14" ry="8" fill="#FF8A80" opacity="0.6"/>
+
+    <!-- Embroidered Nose & Smile -->
+    <path d="M125 200 L135 200 L130 207 Z" fill="#E53935"/>
+    <path d="M130 207 V 216 M130 216 Q122 221 116 217 M130 216 Q138 221 144 217" 
+          fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Paws holding a miniature crochet strawberry -->
+    <ellipse cx="80" cy="340" rx="24" ry="16" fill="url(#bunny-cream)" stroke="#1A1A1A" stroke-width="2.2"/>
+    <ellipse cx="180" cy="340" rx="24" ry="16" fill="url(#bunny-cream)" stroke="#1A1A1A" stroke-width="2.2"/>
+    
+    <g transform="translate(130, 335)">
+      <path d="M-14 -5 C-18 15, 0 25, 0 25 C0 25, 18 15, 14 -5 Z" fill="#E53935" stroke="#1A1A1A" stroke-width="2"/>
+      <ellipse cx="0" cy="-6" rx="10" ry="4" fill="#4CAF50"/>
+      <circle cx="-4" cy="4" r="1.5" fill="#FFFFFF"/>
+      <circle cx="4" cy="4" r="1.5" fill="#FFFFFF"/>
+      <circle cx="0" cy="12" r="1.5" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>

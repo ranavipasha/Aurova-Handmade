@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 550" width="100%" height="100%">
+  <defs>
+    <filter id="g4-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#3C332E" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="g4-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6F0"/>
+      <stop offset="100%" stop-color="#EFE6D9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="650" height="550" fill="url(#g4-bg)"/>
+  <circle cx="325" cy="275" r="150" fill="#D9B7B2" opacity="0.25"/>
+  <ellipse cx="325" cy="275" rx="200" ry="120" fill="#FAF2E8" opacity="0.5"/>
+
+  <g id="rakhi-talisman" filter="url(#g4-sh)">
+    <path d="M50 275 C 130 260, 200 290, 260 275" fill="none" stroke="#B98F8B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M390 275 C 450 260, 520 290, 600 275" fill="none" stroke="#B98F8B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M50 275 C 130 260, 200 290, 260 275" fill="none" stroke="#D4A76A" stroke-width="1.2" stroke-dasharray="3 4"/>
+    <path d="M390 275 C 450 260, 520 290, 600 275" fill="none" stroke="#D4A76A" stroke-width="1.2" stroke-dasharray="3 4"/>
+
+    <circle cx="160" cy="270" r="7" fill="#C5A47E"/>
+    <circle cx="210" cy="280" r="6" fill="#FAF5EE"/>
+    <circle cx="440" cy="270" r="6" fill="#FAF5EE"/>
+    <circle cx="490" cy="280" r="7" fill="#C5A47E"/>
+
+    <circle cx="325" cy="275" r="58" fill="#FAF4EE"/>
+    <circle cx="325" cy="275" r="58" fill="none" stroke="#B98F8B" stroke-width="4" stroke-dasharray="6 6"/>
+    <circle cx="325" cy="275" r="42" fill="#D9B7B2"/>
+    <circle cx="325" cy="275" r="28" fill="#FFFFFF"/>
+    <circle cx="325" cy="275" r="14" fill="#D4A76A"/>
+    <circle cx="325" cy="275" r="7" fill="#3C332E"/>
+
+    <line x1="325" y1="210" x2="325" y2="225" stroke="#D4A76A" stroke-width="2"/>
+    <line x1="325" y1="325" x2="325" y2="340" stroke="#D4A76A" stroke-width="2"/>
+    <line x1="260" y1="275" x2="275" y2="275" stroke="#D4A76A" stroke-width="2"/>
+    <line x1="375" y1="275" x2="390" y2="275" stroke="#D4A76A" stroke-width="2"/>
+  </g>
+
+  <text x="40" y="505" font-family="'Cormorant Garamond', serif" font-size="14" fill="#3C332E" letter-spacing="2">ÉTUDE NO. 08 — TALISMAN &amp; RAKHI EN FIL DE SOIE ET COTON</text>
+  <rect x="20" y="20" width="610" height="510" fill="none" stroke="#3C332E" stroke-width="1" opacity="0.12"/>
+</svg>

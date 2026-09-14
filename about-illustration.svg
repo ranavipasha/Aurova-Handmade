@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550" width="100%" height="100%">
+  <defs>
+    <filter id="ab-sh" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#222222" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="700" height="550" fill="#FFFFFF"/>
+
+  <!-- Playful hand-drawn stars and spark doodles -->
+  <path d="M120 70 L130 90 L152 92 L135 107 L140 128 L120 115 L100 128 L105 107 L88 92 L110 90 Z" 
+        fill="#FFCA28" stroke="#F57C00" stroke-width="2" filter="url(#ab-sh)"/>
+  <path d="M580 90 L588 106 L606 108 L592 120 L596 138 L580 128 L564 138 L568 120 L554 108 L572 106 Z" 
+        fill="#FFD54F" stroke="#FFA000" stroke-width="1.8"/>
+  <path d="M620 380 L628 395 L644 397 L632 408 L636 424 L620 415 L604 424 L608 408 L596 397 L612 395 Z" 
+        fill="#FFCA28" stroke="#F57C00" stroke-width="1.8"/>
+
+  <!-- Hand-drawn curved ribbon loop (top) -->
+  <path d="M220 70 Q260 40 280 80 Q300 120 340 70" fill="none" stroke="#FFA726" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Golden Sunny egg doodle (reference style) -->
+  <g transform="translate(520, 50)" filter="url(#ab-sh)">
+    <path d="M30 8 C48 6, 62 16, 65 32 C68 48, 55 62, 38 60 C20 58, 8 50, 7 35 C6 20, 15 10, 30 8 Z" 
+          fill="#F7F7F7" stroke="#E0DACB" stroke-width="2"/>
+    <circle cx="36" cy="34" r="14" fill="#FF9E1B"/>
+    <circle cx="32" cy="30" r="3" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+
+  <!-- ARTISAN HANDS CRAFTING WITH WOODEN HOOK & YARN (Centerpiece) -->
+  <g id="crafting-hands" transform="translate(180, 160)" filter="url(#ab-sh)">
+    
+    <!-- Skein of Warm Rose & Cream Yarn on left -->
+    <g transform="translate(-40, 90)">
+      <ellipse cx="60" cy="60" rx="55" ry="42" fill="#F8BBD0" stroke="#C2185B" stroke-width="2.5"/>
+      <path d="M20 60 Q60 30 100 60" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>
+      <path d="M25 75 Q60 45 95 75" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8"/>
+      <path d="M35 90 Q60 65 85 90" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+      <!-- Working yarn tail flowing to hands -->
+      <path d="M95 50 C140 20 160 80 200 65" fill="none" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Wooden Crochet Hook -->
+    <path d="M90 200 L270 50" stroke="#8D6E63" stroke-width="9" stroke-linecap="round"/>
+    <path d="M270 50 Q282 42 278 36 Q270 34 265 44" fill="none" stroke="#8D6E63" stroke-width="4.5" stroke-linecap="round"/>
+    
+    <!-- Left Hand Holding the Working Yarn & Loop -->
+    <!-- Arm sleeve cuff -->
+    <rect x="20" y="240" width="70" height="35" rx="8" fill="#333333"/>
+    <!-- Hand -->
+    <ellipse cx="90" cy="220" rx="32" ry="24" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1.8"/>
+    <!-- Fingers holding the stitch -->
+    <path d="M100 200 C115 190 135 190 145 205 C145 215 125 225 110 220" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1.8"/>
+    <path d="M110 220 C125 215 145 215 150 230 C150 240 130 245 115 238" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1.8"/>
+
+    <!-- Right Hand Guiding the Hook -->
+    <rect x="260" y="160" width="75" height="35" rx="8" fill="#333333" transform="rotate(35 260 160)"/>
+    <ellipse cx="230" cy="115" rx="28" ry="22" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1.8" transform="rotate(25 230 115)"/>
+    <path d="M225 95 Q245 85 255 105 Q245 120 225 115" fill="#FFE0B2" stroke="#FFB74D" stroke-width="1.8"/>
+
+    <!-- The Emerging Handmade Crochet Flower Motifs -->
+    <g transform="translate(130, 160)">
+      <!-- Petals being formed -->
+      <circle cx="20" cy="20" r="28" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+      <circle cx="20" cy="20" r="14" fill="#FFCA28"/>
+      <!-- Little looped stitches -->
+      <path d="M0 20 C-10 10 -10 -5 5 -5 C20 -5 20 10 20 20" fill="#F48FB1" stroke="#E91E63" stroke-width="2"/>
+      <path d="M20 0 C25 -15 45 -15 50 0 C55 15 35 20 20 20" fill="#F48FB1" stroke="#E91E63" stroke-width="2"/>
+      <path d="M35 15 C50 15 55 35 45 45 C35 55 25 35 20 20" fill="#F48FB1" stroke="#E91E63" stroke-width="2"/>
+      <circle cx="20" cy="20" r="6" fill="#C2185B"/>
+    </g>
+
+  </g>
+
+  <!-- Sweet little passion fruit & citrus doodle at bottom -->
+  <g transform="translate(130, 430)" filter="url(#ab-sh)">
+    <circle cx="22" cy="22" r="20" fill="#FF9800" stroke="#E65100" stroke-width="2"/>
+    <circle cx="22" cy="22" r="15" fill="#FFE0B2"/>
+    <circle cx="22" cy="22" r="4" fill="#FF9800"/>
+  </g>
+
+  <!-- Hand-drawn leaf sprig -->
+  <path d="M520 440 Q550 410 590 420" stroke="#4CAF50" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="545" cy="420" rx="12" ry="6" fill="#81C784" transform="rotate(-25 545 420)"/>
+  <ellipse cx="575" cy="415" rx="12" ry="6" fill="#81C784" transform="rotate(20 575 415)"/>
+</svg>

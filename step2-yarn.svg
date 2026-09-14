@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <rect width="200" height="200" rx="12" fill="#FFFFFF"/>
+  <ellipse cx="100" cy="85" rx="55" ry="42" fill="#FFCDD2" stroke="#222222" stroke-width="2.5"/>
+  <path d="M60 85 Q100 55 140 85" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M65 100 Q100 70 135 100" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+  <!-- Color Swatch Dots -->
+  <circle cx="55" cy="155" r="14" fill="#E52B2B" stroke="#222222" stroke-width="2"/>
+  <circle cx="85" cy="155" r="14" fill="#FFB300" stroke="#222222" stroke-width="2"/>
+  <circle cx="115" cy="155" r="14" fill="#388E3C" stroke="#222222" stroke-width="2"/>
+  <circle cx="145" cy="155" r="14" fill="#C2185B" stroke="#222222" stroke-width="2"/>
+</svg>

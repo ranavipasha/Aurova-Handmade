@@ -1,0 +1,89 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 650" width="100%" height="100%">
+  <defs>
+    <filter id="ink-shadow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#111111" flood-opacity="0.08"/>
+    </filter>
+    <radialGradient id="rose-grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FF8A80"/>
+      <stop offset="55%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#C2185B"/>
+    </radialGradient>
+    <radialGradient id="lavender-grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E1BEE7"/>
+      <stop offset="60%" stop-color="#BA68C8"/>
+      <stop offset="100%" stop-color="#7B1FA2"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="650" fill="#FFFFFF"/>
+
+  <!-- Vintage studio circular stamp -->
+  <g transform="translate(100, 150)" opacity="0.4">
+    <circle cx="40" cy="40" r="36" fill="none" stroke="#222222" stroke-width="1.2" stroke-dasharray="2 3"/>
+    <text x="40" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" letter-spacing="1.5" fill="#222222" text-anchor="middle">AUROVA</text>
+    <text x="40" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#222222" text-anchor="middle">BOTANICA</text>
+    <text x="40" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" letter-spacing="1" fill="#222222" text-anchor="middle">PERMANENT</text>
+  </g>
+
+  <!-- CHUNKY CROCHET FLOWER BOUQUET (Centerpiece) -->
+  <g id="flower-bouquet" transform="translate(170, 70)" filter="url(#ink-shadow)">
+    <!-- Stems with bold ink lines -->
+    <path d="M130 250 Q120 370 110 470" stroke="#388E3C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M70 250 Q100 370 130 470" stroke="#388E3C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M190 250 Q150 370 120 470" stroke="#388E3C" stroke-width="6" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <ellipse cx="80" cy="340" rx="22" ry="10" fill="#81C784" stroke="#1B5E20" stroke-width="2.2" transform="rotate(-35 80 340)"/>
+    <ellipse cx="170" cy="350" rx="22" ry="10" fill="#81C784" stroke="#1B5E20" stroke-width="2.2" transform="rotate(35 170 350)"/>
+
+    <!-- Flower 1: Chunky Peony/Rose (Center) -->
+    <g transform="translate(130, 180)">
+      <circle cx="0" cy="0" r="52" fill="url(#rose-grad)" stroke="#1A1A1A" stroke-width="2.8"/>
+      <!-- Bobble petals -->
+      <path d="M-40 -15 C-45 -35, -20 -50, 0 -42 C20 -50, 45 -35, 40 -15 C46 15, 28 42, 0 44 C-28 42, -46 15, -40 -15 Z" 
+            fill="#FFCDD2" stroke="#1A1A1A" stroke-width="2"/>
+      <circle cx="0" cy="0" r="28" fill="url(#rose-grad)" stroke="#1A1A1A" stroke-width="2"/>
+      <circle cx="0" cy="0" r="14" fill="#FFFFFF"/>
+      <circle cx="-4" cy="-4" r="3" fill="#C2185B"/>
+    </g>
+
+    <!-- Flower 2: Chunky Daisy (Left) -->
+    <g transform="translate(50, 130)">
+      <g fill="#FFFDF8" stroke="#1A1A1A" stroke-width="2.2" stroke-linejoin="round">
+        <ellipse cx="-22" cy="0" rx="18" ry="10"/>
+        <ellipse cx="22" cy="0" rx="18" ry="10"/>
+        <ellipse cx="0" cy="-22" rx="10" ry="18"/>
+        <ellipse cx="0" cy="22" rx="10" ry="18"/>
+        <ellipse cx="-16" cy="-16" rx="16" ry="9" transform="rotate(45 -16 -16)"/>
+        <ellipse cx="16" cy="16" rx="16" ry="9" transform="rotate(45 16 16)"/>
+        <ellipse cx="16" cy="-16" rx="16" ry="9" transform="rotate(-45 16 -16)"/>
+        <ellipse cx="-16" cy="16" rx="16" ry="9" transform="rotate(-45 -16 16)"/>
+      </g>
+      <circle cx="0" cy="0" r="16" fill="#FFCA28" stroke="#1A1A1A" stroke-width="2.2"/>
+      <circle cx="-3" cy="-3" r="3" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Flower 3: Chunky Lavender Stem (Right) -->
+    <g transform="translate(210, 110)">
+      <path d="M0 -30 V 120" stroke="#388E3C" stroke-width="4.5" stroke-linecap="round"/>
+      <g fill="url(#lavender-grad)" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round">
+        <ellipse cx="-9" cy="-20" rx="12" ry="9" transform="rotate(-20 -9 -20)"/>
+        <ellipse cx="9" cy="-12" rx="12" ry="9" transform="rotate(20 9 -12)"/>
+        <ellipse cx="-10" cy="0" rx="13" ry="10" transform="rotate(-20 -10 0)"/>
+        <ellipse cx="10" cy="8" rx="13" ry="10" transform="rotate(20 10 8)"/>
+        <ellipse cx="-11" cy="22" rx="13" ry="10" transform="rotate(-20 -11 22)"/>
+        <ellipse cx="11" cy="30" rx="13" ry="10" transform="rotate(20 11 30)"/>
+        <ellipse cx="-11" cy="44" rx="14" ry="10" transform="rotate(-20 -11 44)"/>
+        <ellipse cx="11" cy="52" rx="14" ry="10" transform="rotate(20 11 52)"/>
+      </g>
+    </g>
+
+    <!-- Chunky Tied Ribbon Bow -->
+    <g transform="translate(120, 380)">
+      <path d="M0 0 C-45 -35 -55 25 0 6 Z" fill="#FFE082" stroke="#1A1A1A" stroke-width="2.5"/>
+      <path d="M0 0 C45 -35 55 25 0 6 Z" fill="#FFE082" stroke="#1A1A1A" stroke-width="2.5"/>
+      <circle cx="0" cy="3" r="8" fill="#FFB300" stroke="#1A1A1A" stroke-width="2"/>
+      <path d="M-4 10 Q-25 45 -20 75" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M4 10 Q25 45 22 75" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
