@@ -250,27 +250,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const products = [
     {
       name: "Crochet bags",
-      src: "assets/images/product-bags.jpg",
+      src: "product-bags.jpg",
+      fallbackSrc: "assets/images/product-bags.jpg",
       alt: "Handmade chunky lavender crochet tote bag"
     },
     {
       name: "Crochet Flower Bouquets",
-      src: "assets/images/product-bouquets.jpg",
+      src: "product-bouquets.jpg",
+      fallbackSrc: "assets/images/product-bouquets.jpg",
       alt: "Everlasting handcrafted botanical crochet flower bouquet"
     },
     {
       name: "Crochet toys",
-      src: "assets/images/product-toys.jpg",
+      src: "product-toys.jpg",
+      fallbackSrc: "assets/images/product-toys.jpg",
       alt: "Handmade amigurumi crochet toys and plushie companions"
     },
     {
       name: "Keychains & charms",
-      src: "assets/images/product-keychains.jpg",
+      src: "product-keychains.jpg",
+      fallbackSrc: "assets/images/product-keychains.jpg",
       alt: "Handcrafted crochet keychains and bag charms"
     },
     {
       name: "Custom pieces",
-      src: "assets/images/product-custom.jpg",
+      src: "product-custom.jpg",
+      fallbackSrc: "assets/images/product-custom.jpg",
       alt: "Personalized bespoke handmade crochet keepsake piece"
     }
   ];
@@ -287,6 +292,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Quick image cross-fade
     lightboxImage.style.opacity = '0.3';
     lightboxImage.src = prod.src;
+    lightboxImage.onerror = () => {
+      if (prod.fallbackSrc && lightboxImage.src !== prod.fallbackSrc) {
+        lightboxImage.src = prod.fallbackSrc;
+      }
+    };
     lightboxImage.alt = prod.alt;
     
     lightboxImage.onload = () => {
