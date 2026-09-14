@@ -1,0 +1,1639 @@
+﻿/* ==========================================================================
+   AUROVA HANDMADE â€” Stylesheet
+   Minimalist Monochrome Base with Warm Earthy Neutral Accents
+   + 5 Small Square Product Cards with Zoom Lightbox & Category Tags
+   + Interactive 3D Flip Cards with Harmonious Neutral Backgrounds & Typography
+   + 2-Line Stacked Letter-by-Letter Vibrant Outline Fill Footer
+   ========================================================================== */
+
+/* --- 1. CSS VARIABLES --- */
+:root {
+  /* Minimalist Base Foundation */
+  --color-bg: #FFFFFF;
+  --color-bg-subtle: #FAF8F5; /* Warm artisan linen */
+  --color-text-dark: #1F1C19;
+  --color-text-graphite: #4A4540;
+  --color-text-muted: #6E675F;
+  --color-text-light: #9E968D;
+  --color-border: #ECE6DD;
+  --color-border-subtle: #F3EFEA;
+
+  /* Organic Neutral Palette (No pop colors) */
+  --neutral-sand: #8A6D56;
+  --neutral-sand-bg: #FAF7F2;
+  --neutral-sand-border: #EAE2D5;
+  --neutral-sand-dark: #2E2723;
+
+  --neutral-sage: #5A6F57;
+  --neutral-sage-bg: #F2F5F1;
+  --neutral-sage-border: #DDE4DC;
+  --neutral-sage-dark: #242D26;
+
+  --neutral-clay: #966858;
+  --neutral-clay-bg: #FAF4F1;
+  --neutral-clay-border: #ECDDD6;
+  --neutral-clay-dark: #2F2421;
+
+  --neutral-ochre: #836E3B;
+  --neutral-ochre-bg: #F8F6EE;
+  --neutral-ochre-border: #EAE5D1;
+  --neutral-ochre-dark: #2A2821;
+
+  --neutral-mauve: #73566C;
+  --neutral-mauve-bg: #F7F4F6;
+  --neutral-mauve-border: #E6DCE4;
+  
+  /* WhatsApp & Interactive Accents */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #1EBE5D;
+
+  /* Typography */
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Layout */
+  --max-width: 1240px;
+  --header-height: 76px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+
+  /* Lively Pop-up Easing */
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* --- 2. RESET & BASE --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-dark);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.68;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* Scroll Progress Bar at the top of viewport */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #8A6D56 0%, #2E2723 100%);
+  z-index: 2000;
+  transition: width 0.1s linear;
+}
+
+/* --- 3. TYPOGRAPHY HEADINGS (CLEAN & MINIMALIST WITH HOLLOW ACCENT WORDS) --- */
+.section-title {
+  font-family: var(--font-main);
+  font-size: clamp(2.2rem, 4.2vw, 3.2rem);
+  font-weight: 800;
+  color: var(--color-text-dark);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+/* Hollow Outline Word Feature: Transparent Fill + Crisp Stroke */
+.hollow-word {
+  color: var(--color-text-dark);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.85px var(--color-text-dark);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .hollow-word {
+    -webkit-text-stroke: 1.4px var(--color-text-dark);
+  }
+}
+
+/* --- 4. SITE HEADER --- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 4px 20px rgba(46, 39, 35, 0.05);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Header Text Logo: Aurova Handmade */
+.brand-text-logo {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-main);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text-dark);
+  transition: opacity 0.2s ease;
+}
+
+.brand-text-logo:hover {
+  opacity: 0.85;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.nav-link {
+  font-family: var(--font-main);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-graphite);
+  padding: 0.35rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-text-dark);
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--neutral-sand);
+  border-radius: 2px;
+}
+
+/* Mobile Toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-toggle-bar {
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-text-dark);
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.nav-toggle.is-active .nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.is-active .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.is-active .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 320px;
+  background-color: #FFFFFF;
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.12);
+  padding: 6rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 0.4s var(--ease-smooth);
+  z-index: 1050;
+}
+
+.mobile-nav-drawer.is-open {
+  transform: translateX(0);
+}
+
+.mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1040;
+}
+
+.mobile-nav-backdrop.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-links .nav-link {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+/* --- 5. LAYOUT CONTAINERS --- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
+  padding-right: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.section {
+  padding-top: clamp(4.5rem, 7.5vw, 7rem);
+  padding-bottom: clamp(4.5rem, 7.5vw, 7rem);
+  position: relative;
+}
+
+.section-header {
+  margin-bottom: clamp(2.5rem, 4vw, 3.75rem);
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0.75rem auto 0;
+  line-height: 1.65;
+}
+
+/* --- 6. TOP SECTION: ABOUT US (FIRST SECTION) --- */
+.about-hero-section {
+  padding-top: calc(var(--header-height) + 3rem);
+  padding-bottom: clamp(4rem, 7vw, 6.5rem);
+  background-color: #FFFFFF;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(2.5rem, 6vw, 5.5rem);
+  align-items: center;
+}
+
+.about-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  height: 100%;
+  min-height: 380px;
+  transition: transform 0.4s var(--ease-pop), box-shadow 0.4s var(--ease-pop);
+}
+
+.about-logo-wrapper:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+.about-logo-img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
+}
+
+.about-content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-family: var(--font-main);
+  font-size: clamp(2.4rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-dark);
+}
+
+.about-text-p {
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.about-text-p strong {
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.about-signature-quote {
+  font-size: clamp(1.15rem, 1.35vw, 1.35rem);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  border-left: 3px solid var(--neutral-sand);
+  padding-left: 1.25rem;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+/* --- 7. OUR PRODUCTS SECTION (5 SMALL SQUARE CARDS WITH REFINED NEUTRAL HUES) --- */
+.products-section {
+  background-color: var(--color-bg-subtle);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.products-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(1rem, 1.8vw, 1.35rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Strict Square Small Card with Click Trigger */
+.product-card-square {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 4px 16px rgba(46, 39, 35, 0.04);
+  transition: transform 0.35s var(--ease-pop), 
+              box-shadow 0.35s var(--ease-pop), 
+              border-color 0.25s ease;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-card-square:hover,
+.product-card-square:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(46, 39, 35, 0.09);
+}
+
+/* Individual Product Neutral Color Themes */
+.card-neutral-sand {
+  border: 1px solid var(--neutral-sand-border);
+}
+.card-neutral-sand:hover {
+  border-color: var(--neutral-sand);
+}
+.card-neutral-sand .product-square-caption {
+  background-color: var(--neutral-sand-bg);
+}
+
+.card-neutral-sage {
+  border: 1px solid var(--neutral-sage-border);
+}
+.card-neutral-sage:hover {
+  border-color: var(--neutral-sage);
+}
+.card-neutral-sage .product-square-caption {
+  background-color: var(--neutral-sage-bg);
+}
+
+.card-neutral-clay {
+  border: 1px solid var(--neutral-clay-border);
+}
+.card-neutral-clay:hover {
+  border-color: var(--neutral-clay);
+}
+.card-neutral-clay .product-square-caption {
+  background-color: var(--neutral-clay-bg);
+}
+
+.card-neutral-ochre {
+  border: 1px solid var(--neutral-ochre-border);
+}
+.card-neutral-ochre:hover {
+  border-color: var(--neutral-ochre);
+}
+.card-neutral-ochre .product-square-caption {
+  background-color: var(--neutral-ochre-bg);
+}
+
+.card-neutral-mauve {
+  border: 1px solid var(--neutral-mauve-border);
+}
+.card-neutral-mauve:hover {
+  border-color: var(--neutral-mauve);
+}
+.card-neutral-mauve .product-square-caption {
+  background-color: var(--neutral-mauve-bg);
+}
+
+.product-square-media {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.product-square-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-smooth);
+}
+
+.product-card-square:hover .product-square-media img {
+  transform: scale(1.06);
+}
+
+/* Floating Zoom Hint Badge */
+.product-zoom-hint {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.25s ease, transform 0.25s var(--ease-pop);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.product-card-square:hover .product-zoom-hint,
+.product-card-square:focus-visible .product-zoom-hint {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product-square-caption {
+  padding: 0.65rem 0.65rem 0.75rem;
+  border-top: 1px solid var(--color-border-subtle);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.25s ease;
+}
+
+.product-category-tag {
+  font-family: var(--font-main);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.15rem;
+}
+
+.card-neutral-sand .product-category-tag { color: var(--neutral-sand); }
+.card-neutral-sage .product-category-tag { color: var(--neutral-sage); }
+.card-neutral-clay .product-category-tag { color: var(--neutral-clay); }
+.card-neutral-ochre .product-category-tag { color: var(--neutral-ochre); }
+.card-neutral-mauve .product-category-tag { color: var(--neutral-mauve); }
+
+.product-square-name {
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* --- 7.1 PRODUCT IMAGE LIGHTBOX MODAL --- */
+.product-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.3s ease;
+  padding: 1.5rem;
+}
+
+.product-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(24, 20, 18, 0.84);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: zoom-out;
+}
+
+.lightbox-dialog {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 92vw;
+  max-height: 92vh;
+  transform: scale(0.92);
+  transition: transform 0.35s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.product-lightbox.is-open .lightbox-dialog {
+  transform: scale(1);
+}
+
+.lightbox-card {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 70px rgba(24, 20, 18, 0.45);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: min(88vw, 620px);
+  max-height: 86vh;
+}
+
+.lightbox-img-wrapper {
+  background-color: #FAF8F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-height: 68vh;
+  position: relative;
+}
+
+.lightbox-image {
+  width: 100%;
+  height: auto;
+  max-height: 68vh;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.lightbox-bar {
+  padding: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--color-border-subtle);
+  flex-shrink: 0;
+}
+
+.lightbox-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.lightbox-counter {
+  font-family: var(--font-main);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--neutral-sand);
+}
+
+.lightbox-title {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  line-height: 1.25;
+}
+
+.lightbox-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.15rem;
+  background-color: var(--color-whatsapp);
+  color: #FFFFFF;
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.lightbox-wa-btn:hover {
+  background-color: var(--color-whatsapp-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+/* Nav & Close Controls */
+.lightbox-btn-close {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.lightbox-btn-close:hover {
+  background-color: #FFFFFF;
+  transform: scale(1.08);
+}
+
+.lightbox-btn-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s var(--ease-pop);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.lightbox-btn-prev {
+  left: -58px;
+}
+
+.lightbox-btn-next {
+  right: -58px;
+}
+
+.lightbox-btn-nav:hover {
+  background-color: #FFFFFF;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* --- 8. SECTION: HOW WE MAKE CUSTOM ORDERS (3D FLIP CARDS WITH HARMONIOUS NEUTRAL COLOURS) --- */
+.custom-orders-section {
+  background-color: #FFFFFF;
+}
+
+.custom-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1.2rem, 2vw, 1.65rem);
+  max-width: 1180px;
+  margin: 0 auto;
+  perspective: 1200px;
+}
+
+/* Flip Card Outer Container */
+.custom-flip-card {
+  background-color: transparent;
+  height: 380px;
+  perspective: 1200px;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  outline: none;
+}
+
+/* Flip Card Inner Rotating Shell */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.34, 1.4, 0.64, 1);
+  transform-style: preserve-3d;
+  border-radius: var(--radius-md);
+  box-shadow: 0 6px 22px rgba(46, 39, 35, 0.05);
+}
+
+/* 3D Flip state strictly controlled by .is-flipped */
+.custom-flip-card.is-flipped .flip-card-inner {
+  transform: rotateY(180deg);
+  box-shadow: 0 16px 36px rgba(46, 39, 35, 0.14);
+}
+
+/* Subtle elevation when hovered on desktop without being flipped */
+@media (hover: hover) and (pointer: fine) {
+  .custom-flip-card:not(.is-flipped):hover .flip-card-inner {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(46, 39, 35, 0.09);
+  }
+}
+
+/* Front & Back Faces Common */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  padding: 1.85rem 1.45rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.flip-card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  pointer-events: auto;
+}
+
+.custom-flip-card.is-flipped .flip-card-front {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flip-card-back {
+  z-index: 1;
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.custom-flip-card.is-flipped .flip-card-back {
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* =========================================================================
+   CARD 1 NEUTRAL HARMONY: Warm Sandstone & Roasted Mocha
+   ========================================================================= */
+.flip-card-step1 .flip-card-front {
+  background-color: var(--neutral-sand-bg);
+  border: 1px solid var(--neutral-sand-border);
+  justify-content: space-between;
+}
+.flip-card-step1:hover .flip-card-front {
+  border-color: var(--neutral-sand);
+}
+.flip-card-step1 .flip-step-num {
+  color: var(--neutral-sand);
+}
+.flip-card-step1 .flip-pill-badge {
+  background-color: #EFE7DE;
+  color: #5E4A37;
+}
+.flip-card-step1:hover .flip-pill-badge {
+  background-color: #5E4A37;
+  color: #FFFFFF;
+}
+.flip-card-step1 .flip-card-illustration {
+  color: #5E4A37;
+}
+.flip-card-step1 .flip-step-meta {
+  color: var(--neutral-sand);
+}
+.flip-card-step1 .flip-step-title {
+  color: #29211B;
+}
+
+/* Card 1 Back Face */
+.flip-card-step1 .flip-card-back {
+  background-color: #2E2723;
+  color: #FAF7F2;
+  border: 1px solid #433933;
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+.flip-card-step1 .flip-back-num {
+  color: #CBB9A7;
+}
+.flip-card-step1 .flip-back-phase {
+  background: rgba(203, 185, 167, 0.18);
+  color: #E6D8CA;
+}
+.flip-card-step1 .flip-back-title {
+  color: #FAF7F2;
+}
+.flip-card-step1 .flip-back-desc {
+  color: #D6CCC0;
+}
+.flip-card-step1 .flip-check {
+  color: #CBB9A7;
+}
+.flip-card-step1 .flip-back-hint {
+  color: #A29485;
+}
+
+/* =========================================================================
+   CARD 2 NEUTRAL HARMONY: Botanical Sage & Forest Slate
+   ========================================================================= */
+.flip-card-step2 .flip-card-front {
+  background-color: var(--neutral-sage-bg);
+  border: 1px solid var(--neutral-sage-border);
+  justify-content: space-between;
+}
+.flip-card-step2:hover .flip-card-front {
+  border-color: var(--neutral-sage);
+}
+.flip-card-step2 .flip-step-num {
+  color: var(--neutral-sage);
+}
+.flip-card-step2 .flip-pill-badge {
+  background-color: #E4ECE3;
+  color: #435540;
+}
+.flip-card-step2:hover .flip-pill-badge {
+  background-color: #435540;
+  color: #FFFFFF;
+}
+.flip-card-step2 .flip-card-illustration {
+  color: #435540;
+}
+.flip-card-step2 .flip-step-meta {
+  color: var(--neutral-sage);
+}
+.flip-card-step2 .flip-step-title {
+  color: #1F271D;
+}
+
+/* Card 2 Back Face */
+.flip-card-step2 .flip-card-back {
+  background-color: #242D26;
+  color: #F2F7F1;
+  border: 1px solid #37443A;
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+.flip-card-step2 .flip-back-num {
+  color: #B8CAB5;
+}
+.flip-card-step2 .flip-back-phase {
+  background: rgba(184, 202, 181, 0.18);
+  color: #D8E5D5;
+}
+.flip-card-step2 .flip-back-title {
+  color: #F2F7F1;
+}
+.flip-card-step2 .flip-back-desc {
+  color: #CAD7C8;
+}
+.flip-card-step2 .flip-check {
+  color: #B8CAB5;
+}
+.flip-card-step2 .flip-back-hint {
+  color: #8E9F8B;
+}
+
+/* =========================================================================
+   CARD 3 NEUTRAL HARMONY: Dusty Terracotta Clay & Deep Umber
+   ========================================================================= */
+.flip-card-step3 .flip-card-front {
+  background-color: var(--neutral-clay-bg);
+  border: 1px solid var(--neutral-clay-border);
+  justify-content: space-between;
+}
+.flip-card-step3:hover .flip-card-front {
+  border-color: var(--neutral-clay);
+}
+.flip-card-step3 .flip-step-num {
+  color: var(--neutral-clay);
+}
+.flip-card-step3 .flip-pill-badge {
+  background-color: #EFE4DF;
+  color: #6C473B;
+}
+.flip-card-step3:hover .flip-pill-badge {
+  background-color: #6C473B;
+  color: #FFFFFF;
+}
+.flip-card-step3 .flip-card-illustration {
+  color: #6C473B;
+}
+.flip-card-step3 .flip-step-meta {
+  color: var(--neutral-clay);
+}
+.flip-card-step3 .flip-step-title {
+  color: #2D1F1A;
+}
+
+/* Card 3 Back Face */
+.flip-card-step3 .flip-card-back {
+  background-color: #2F2421;
+  color: #FAF5F3;
+  border: 1px solid #463632;
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+.flip-card-step3 .flip-back-num {
+  color: #D4BBB2;
+}
+.flip-card-step3 .flip-back-phase {
+  background: rgba(212, 187, 178, 0.18);
+  color: #E9D5CF;
+}
+.flip-card-step3 .flip-back-title {
+  color: #FAF5F3;
+}
+.flip-card-step3 .flip-back-desc {
+  color: #DACBC6;
+}
+.flip-card-step3 .flip-check {
+  color: #D4BBB2;
+}
+.flip-card-step3 .flip-back-hint {
+  color: #A38C84;
+}
+
+/* =========================================================================
+   CARD 4 NEUTRAL HARMONY: Warm Sandstone Khaki & Deep Cedar
+   ========================================================================= */
+.flip-card-step4 .flip-card-front {
+  background-color: var(--neutral-ochre-bg);
+  border: 1px solid var(--neutral-ochre-border);
+  justify-content: space-between;
+}
+.flip-card-step4:hover .flip-card-front {
+  border-color: var(--neutral-ochre);
+}
+.flip-card-step4 .flip-step-num {
+  color: var(--neutral-ochre);
+}
+.flip-card-step4 .flip-pill-badge {
+  background-color: #EEE9D5;
+  color: #584F2E;
+}
+.flip-card-step4:hover .flip-pill-badge {
+  background-color: #584F2E;
+  color: #FFFFFF;
+}
+.flip-card-step4 .flip-card-illustration {
+  color: #584F2E;
+}
+.flip-card-step4 .flip-step-meta {
+  color: var(--neutral-ochre);
+}
+.flip-card-step4 .flip-step-title {
+  color: #262418;
+}
+
+/* Card 4 Back Face */
+.flip-card-step4 .flip-card-back {
+  background-color: #2A2821;
+  color: #FAF8F1;
+  border: 1px solid #413E34;
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+.flip-card-step4 .flip-back-num {
+  color: #CCC6A2;
+}
+.flip-card-step4 .flip-back-phase {
+  background: rgba(204, 198, 162, 0.18);
+  color: #E4DFC3;
+}
+.flip-card-step4 .flip-back-title {
+  color: #FAF8F1;
+}
+.flip-card-step4 .flip-back-desc {
+  color: #D6D2BF;
+}
+.flip-card-step4 .flip-check {
+  color: #CCC6A2;
+}
+.flip-card-step4 .flip-back-hint {
+  color: #9C9579;
+}
+
+/* Shared Flip Card Internal Elements */
+.flip-front-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flip-step-num {
+  font-family: var(--font-main);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.flip-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-main);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.flip-card-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 0;
+}
+
+.flip-card-illustration svg {
+  transition: transform 0.4s var(--ease-pop);
+}
+
+.custom-flip-card:hover .flip-card-illustration svg {
+  transform: scale(1.08);
+}
+
+.flip-front-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-step-meta {
+  font-family: var(--font-main);
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.flip-step-title {
+  font-family: var(--font-main);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.flip-back-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flip-back-num {
+  font-family: var(--font-main);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.flip-back-phase {
+  font-family: var(--font-main);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.flip-back-content {
+  margin-top: 0.5rem;
+}
+
+.flip-back-title {
+  font-family: var(--font-main);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+  line-height: 1.25;
+}
+
+.flip-back-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.flip-features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.flip-features-list li {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flip-check {
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.flip-back-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 0.75rem;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1.15rem;
+  font-family: var(--font-main);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.22s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.flip-back-btn svg {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.flip-back-btn:hover {
+  transform: translateY(-1px);
+}
+
+.flip-back-btn:active {
+  transform: translateY(1px) scale(0.97);
+}
+
+.flip-back-btn:hover svg {
+  transform: rotate(-90deg);
+}
+
+/* Step 1 Colors (Warm Sandstone & Mocha) */
+.flip-card-step1 .flip-back-btn {
+  background-color: rgba(203, 185, 167, 0.16);
+  color: #E6D8CA;
+  border-color: rgba(203, 185, 167, 0.32);
+}
+.flip-card-step1 .flip-back-btn:hover {
+  background-color: rgba(203, 185, 167, 0.3);
+  color: #FFFFFF;
+  border-color: #CBB9A7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Step 2 Colors (Botanical Sage & Slate) */
+.flip-card-step2 .flip-back-btn {
+  background-color: rgba(184, 202, 181, 0.16);
+  color: #D8E5D5;
+  border-color: rgba(184, 202, 181, 0.32);
+}
+.flip-card-step2 .flip-back-btn:hover {
+  background-color: rgba(184, 202, 181, 0.3);
+  color: #FFFFFF;
+  border-color: #B8CAB5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Step 3 Colors (Terracotta & Umber) */
+.flip-card-step3 .flip-back-btn {
+  background-color: rgba(212, 187, 178, 0.16);
+  color: #E9D5CF;
+  border-color: rgba(212, 187, 178, 0.32);
+}
+.flip-card-step3 .flip-back-btn:hover {
+  background-color: rgba(212, 187, 178, 0.3);
+  color: #FFFFFF;
+  border-color: #D4BBB2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Step 4 Colors (Ochre & Bronze Cedar) */
+.flip-card-step4 .flip-back-btn {
+  background-color: rgba(204, 198, 162, 0.16);
+  color: #E4DFC3;
+  border-color: rgba(204, 198, 162, 0.32);
+}
+.flip-card-step4 .flip-back-btn:hover {
+  background-color: rgba(204, 198, 162, 0.3);
+  color: #FFFFFF;
+  border-color: #CCC6A2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Order Single WhatsApp CTA */
+.custom-order-action {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.btn-whatsapp-large {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2.2rem;
+  background-color: var(--color-whatsapp);
+  color: #FFFFFF;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+  transition: all 0.3s var(--ease-pop);
+}
+
+.btn-whatsapp-large:hover {
+  background-color: var(--color-whatsapp-hover);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 32px rgba(37, 211, 102, 0.35);
+}
+
+/* --- 9. CONTACT SECTION --- */
+.contact-section {
+  background-color: var(--color-bg-subtle);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.contact-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.4s var(--ease-pop), box-shadow 0.4s var(--ease-pop), border-color 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  border-color: var(--neutral-sand-border);
+}
+
+.contact-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  color: var(--color-text-dark);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.contact-card:hover .contact-icon-wrap {
+  background-color: var(--color-text-dark);
+  color: #FFFFFF;
+}
+
+.contact-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-dark);
+}
+
+.contact-handle {
+  font-size: 0.9rem;
+  color: var(--color-text-graphite);
+  margin-bottom: 1rem;
+}
+
+.contact-cta-link {
+  font-family: var(--font-main);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s ease;
+}
+
+.contact-card:hover .contact-cta-link {
+  color: var(--neutral-sand);
+}
+
+/* --- 10. FOOTER: 2-LINE BIG AUROVA HANDMADE TEXT MATCHING ATTACHED SCREENSHOT --- */
+.site-footer {
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--color-border);
+  padding: clamp(4rem, 7vw, 6.5rem) 0 2.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Giant 2-Line Stacked Display: AUROVA on line 1, HANDMADE on line 2 */
+.giant-footer-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  font-size: clamp(3.4rem, 11.5vw, 8.8rem);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 0.96;
+  text-transform: uppercase;
+  margin-bottom: 2.8rem;
+  user-select: none;
+  cursor: default;
+}
+
+.footer-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Individual Letter Element */
+.footer-letter {
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 2.4px #111111;
+  paint-order: stroke fill;
+  transition: color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+  position: relative;
+  will-change: color;
+}
+
+/* Hover / Sweep Active State */
+.footer-letter:hover,
+.footer-letter.is-active-color {
+  color: var(--letter-color, #FF5252);
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.2rem;
+  margin-bottom: 3rem;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-graphite);
+}
+
+.footer-nav a:hover {
+  color: var(--color-text-dark);
+}
+
+.footer-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.back-to-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-main);
+  font-weight: 600;
+  color: var(--color-text-graphite);
+}
+
+.back-to-top-btn:hover {
+  color: var(--color-text-dark);
+}
+
+/* --- 11. SCROLL REVEAL ANIMATIONS --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s var(--ease-smooth), transform 0.65s var(--ease-smooth);
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+
+/* --- 12. RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 1024px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-logo-wrapper {
+    min-height: 280px;
+  }
+  .products-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .custom-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .contact-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Lightbox Mobile Adjustments */
+  .product-lightbox {
+    padding: 0.85rem;
+  }
+  
+  .lightbox-card {
+    max-width: 94vw;
+    max-height: 88vh;
+  }
+
+  .lightbox-img-wrapper {
+    max-height: 56vh;
+  }
+
+  .lightbox-image {
+    max-height: 56vh;
+  }
+
+  .lightbox-btn-close {
+    top: -42px;
+    right: 2px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .lightbox-btn-nav {
+    width: 36px;
+    height: 36px;
+  }
+
+  .lightbox-btn-prev {
+    left: 8px;
+    background-color: rgba(255, 255, 255, 0.88);
+  }
+
+  .lightbox-btn-next {
+    right: 8px;
+    background-color: rgba(255, 255, 255, 0.88);
+  }
+
+  .lightbox-bar {
+    padding: 0.75rem 1rem;
+  }
+
+  .lightbox-title {
+    font-size: 1rem;
+  }
+
+  .lightbox-wa-btn span {
+    display: none;
+  }
+
+  .lightbox-wa-btn {
+    padding: 0.55rem;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .products-grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+  .custom-steps-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+  .custom-flip-card {
+    height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .products-grid-5 {
+    grid-template-columns: 1fr;
+  }
+}

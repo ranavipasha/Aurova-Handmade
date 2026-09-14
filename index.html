@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurova Handmade Contemporary Crochet Art Studio</title>
+  
+  <meta name="description" content="Aurova Handmade creates thoughtful crochet bags, botanical flowers, heirloom toys, keychains, and custom handmade pieces crafted one stitch at a time.">
+  <meta name="author" content="Aurova Handmade">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aurova Handmade Contemporary Crochet Art Studio">
+  <meta property="og:description" content="Where every stitch finds its own little light. Handmade crochet bags, charms, plushies, flowers, and custom pieces.">
+  <meta property="og:image" content="assets/images/aurova-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/aurova-logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Full Page Scroll Progress Bar -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Clean Normal Text Logo: Aurova Handmade -->
+      <a href="#about" class="brand-text-logo" aria-label="Aurova Handmade Home">
+        Aurova Handmade
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link active">About Us</a>
+        <a href="#products" class="nav-link">Our Products</a>
+        <a href="#custom-orders" class="nav-link">Custom Orders</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav" aria-label="Mobile Navigation">
+    <div class="mobile-nav-top">
+      <a href="#about" class="brand-text-logo" style="margin-bottom: 2rem; font-size: 1.5rem;">
+        Aurova Handmade
+      </a>
+      <nav class="mobile-nav-links">
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#products" class="nav-link">Our Products</a>
+        <a href="#custom-orders" class="nav-link">Custom Orders</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <p style="font-weight: 700; margin-bottom: 0.35rem;">Aurova Handmade</p>
+      <p>Where every stitch finds its own little light.</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- =======================================================================
+         1. TOP SECTION: ABOUT US (FIRST SECTION)
+         Enlarged logo on left matching content height + Aurora & Nova Story on right
+         Clean heading without faint watermark text
+         ======================================================================= -->
+    <section class="section about-hero-section" id="about">
+      <div class="container">
+        <div class="about-hero-grid">
+          
+          <!-- Left side: Enlarged Official Logo matching content height -->
+          <div class="about-logo-wrapper reveal">
+            <img src="assets/images/aurova-logo.png" 
+                 alt="Aurova Handmade Official Logo" 
+                 class="about-logo-img" 
+                 width="400" height="400" 
+                 loading="eager">
+          </div>
+
+          <!-- Right side: About Us Copy -->
+          <div class="about-content-block reveal delay-1">
+            <h1 class="about-title">About Aurova<br><span class="hollow-word">Handmade</span></h1>
+
+            <p class="about-text-p">
+              Aurova Handmade is a name born from <strong>Aurora</strong> and <strong>Nova</strong>, bringing together the beauty of light, colour and wonder with the idea of new beginnings and something that shines.
+            </p>
+
+            <p class="about-text-p">
+              Just like our name, we believe every handmade creation should carry its own little spark. Through crochet, we turn simple yarn into thoughtful pieces filled with creativity, warmth and personality.
+            </p>
+
+            <p class="about-signature-quote">
+              Aurova Handmade, where every stitch finds its own little light.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         2. OUR PRODUCTS SECTION (5 SQUARE & SMALL ITEMS WITH NEUTRAL COLOURS)
+         Crochet bags, Crochet Flower Bouquets, Crochet toys, Keychains & charms, Custom pieces
+         Subtle organic neutral hues (sand, sage, clay, ochre, mauve) + Click-to-enlarge
+         ======================================================================= -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <h2 class="section-title">Our <span class="hollow-word">Products</span></h2>
+          <p class="section-subtitle">
+            Artistic crochet pieces crafted slowly with chunky yarn, earthy hues, and handcrafted stitches. Click any piece to inspect details.
+          </p>
+        </div>
+
+        <div class="products-grid-5">
+          
+          <!-- Item 1: Crochet bags (Sandstone Neutral) -->
+          <article class="product-card-square card-neutral-sand reveal" 
+                   data-product-index="0" 
+                   role="button" 
+                   tabindex="0" 
+                   aria-label="View large photo of Crochet bags">
+            <div class="product-square-media">
+              <img src="assets/images/product-bags.jpg" 
+                   alt="Handmade chunky lavender crochet tote bag" 
+                   width="500" height="500" loading="lazy">
+              <div class="product-zoom-hint" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-square-caption">
+              <span class="product-category-tag">Wearable Art</span>
+              <h3 class="product-square-name">Crochet bags</h3>
+            </div>
+          </article>
+
+          <!-- Item 2: Crochet Flower Bouquets (Willow Sage Neutral) -->
+          <article class="product-card-square card-neutral-sage reveal delay-1" 
+                   data-product-index="1" 
+                   role="button" 
+                   tabindex="0" 
+                   aria-label="View large photo of Crochet Flower Bouquets">
+            <div class="product-square-media">
+              <img src="assets/images/product-bouquets.jpg" 
+                   alt="Everlasting handcrafted botanical crochet flower bouquet" 
+                   width="500" height="500" loading="lazy">
+              <div class="product-zoom-hint" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-square-caption">
+              <span class="product-category-tag">Botanical Stems</span>
+              <h3 class="product-square-name">Crochet Flower Bouquets</h3>
+            </div>
+          </article>
+
+          <!-- Item 3: Crochet toys (Warm Clay Neutral) -->
+          <article class="product-card-square card-neutral-clay reveal delay-2" 
+                   data-product-index="2" 
+                   role="button" 
+                   tabindex="0" 
+                   aria-label="View large photo of Crochet toys">
+            <div class="product-square-media">
+              <img src="assets/images/product-toys.jpg" 
+                   alt="Handmade amigurumi crochet toys and plushie companions" 
+                   width="500" height="500" loading="lazy">
+              <div class="product-zoom-hint" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-square-caption">
+              <span class="product-category-tag">Heirloom Plush</span>
+              <h3 class="product-square-name">Crochet toys</h3>
+            </div>
+          </article>
+
+          <!-- Item 4: Keychains & charms (Warm Ochre Neutral) -->
+          <article class="product-card-square card-neutral-ochre reveal delay-1" 
+                   data-product-index="3" 
+                   role="button" 
+                   tabindex="0" 
+                   aria-label="View large photo of Keychains & charms">
+            <div class="product-square-media">
+              <img src="assets/images/product-keychains.jpg" 
+                   alt="Handcrafted crochet keychains and bag charms" 
+                   width="500" height="500" loading="lazy">
+              <div class="product-zoom-hint" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-square-caption">
+              <span class="product-category-tag">Everyday Charms</span>
+              <h3 class="product-square-name">Keychains &amp; charms</h3>
+            </div>
+          </article>
+
+          <!-- Item 5: Custom pieces (Dusty Mauve Neutral) -->
+          <article class="product-card-square card-neutral-mauve reveal delay-2" 
+                   data-product-index="4" 
+                   role="button" 
+                   tabindex="0" 
+                   aria-label="View large photo of Custom pieces">
+            <div class="product-square-media">
+              <img src="assets/images/product-custom.jpg" 
+                   alt="Personalized bespoke handmade crochet keepsake piece" 
+                   width="500" height="500" loading="lazy">
+              <div class="product-zoom-hint" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-square-caption">
+              <span class="product-category-tag">Bespoke Pieces</span>
+              <h3 class="product-square-name">Custom pieces</h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         3. HOW WE MAKE CUSTOM ORDERS (3D FLIP CARDS WITH HARMONIOUS NEUTRAL COLOURS)
+         Warm oat, sage willow, terracotta clay & cedar sand backgrounds & typography
+         ======================================================================= -->
+    <section class="section custom-orders-section" id="custom-orders">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <h2 class="section-title">How We Make <span class="hollow-word">Custom</span> Orders</h2>
+          <p class="section-subtitle">
+            Hover or tap each card to flip and explore each step of turning your imagination into an heirloom.
+          </p>
+        </div>
+
+        <!-- 3D Flip Cards Grid with Rich Neutral Color Harmonies -->
+        <div class="custom-steps-grid reveal">
+          
+          <!-- Step 1 Flip Card (Warm Oat & Mocha) -->
+          <div class="custom-flip-card flip-card-step1" tabindex="0" role="button" aria-label="Step 1: Share Your Idea. Click or hover to flip.">
+            <div class="flip-card-inner">
+              
+              <!-- Front Face -->
+              <div class="flip-card-front">
+                <div class="flip-front-header">
+                  <span class="flip-step-num">01</span>
+                  <button type="button" class="flip-pill-badge" aria-label="Flip card to view details">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+                    </svg>
+                    <span>Flip</span>
+                  </button>
+                </div>
+                
+                <div class="flip-card-illustration">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="14" y="10" width="36" height="44" rx="4" fill="rgba(255,255,255,0.7)" stroke="currentColor" stroke-width="2.2"/>
+                    <line x1="22" y1="20" x2="36" y2="20" stroke="currentColor" stroke-width="2.2"/>
+                    <line x1="22" y1="28" x2="42" y2="28" stroke="currentColor" stroke-width="2.2"/>
+                    <line x1="22" y1="36" x2="34" y2="36" stroke="currentColor" stroke-width="2.2"/>
+                    <path d="M42 42l8-8-4-4-8 8v4h4z" fill="#FFFFFF" stroke="currentColor" stroke-width="2.2"/>
+                  </svg>
+                </div>
+
+                <div class="flip-front-footer">
+                  <span class="flip-step-meta">Step 01 &bull; Conception</span>
+                  <h3 class="flip-step-title">Share Your Idea</h3>
+                </div>
+              </div>
+
+              <!-- Back Face (Deep Warm Mocha) -->
+              <div class="flip-card-back">
+                <div class="flip-back-header">
+                  <span class="flip-back-num">01</span>
+                  <span class="flip-back-phase">Ideation</span>
+                </div>
+                <div class="flip-back-content">
+                  <h3 class="flip-back-title">Share Your Idea</h3>
+                  <p class="flip-back-desc">
+                    Send us a doodle, Pinterest pin, color inspiration, or describe what you have in mind via WhatsApp.
+                  </p>
+                  <ul class="flip-features-list">
+                    <li><span class="flip-check">&#10003;</span> Custom dimensions &amp; silhouettes</li>
+                    <li><span class="flip-check">&#10003;</span> One on one artisan consultation</li>
+                  </ul>
+                </div>
+                <div class="flip-back-footer">
+                  <button type="button" class="flip-back-btn" aria-label="Tap to flip back to front">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2.5 2v6h6M2.66 15.57a10 10 0 1 0 .57-8.38l-5.67-5.19"/>
+                    </svg>
+                    <span>Tap to flip back</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Step 2 Flip Card (Botanical Willow & Forest Slate) -->
+          <div class="custom-flip-card flip-card-step2" tabindex="0" role="button" aria-label="Step 2: Choose Palette & Yarn. Click or hover to flip.">
+            <div class="flip-card-inner">
+              
+              <!-- Front Face -->
+              <div class="flip-card-front">
+                <div class="flip-front-header">
+                  <span class="flip-step-num">02</span>
+                  <button type="button" class="flip-pill-badge" aria-label="Flip card to view details">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+                    </svg>
+                    <span>Flip</span>
+                  </button>
+                </div>
+                
+                <div class="flip-card-illustration">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="26" cy="34" r="16" fill="rgba(255,255,255,0.7)" stroke="currentColor" stroke-width="2.2"/>
+                    <path d="M14 34c4-6 10-7 16-3s7 10 3 16" stroke="currentColor" stroke-width="2.2"/>
+                    <circle cx="44" cy="24" r="11" fill="#FFFFFF" stroke="currentColor" stroke-width="2.2"/>
+                    <path d="M37 24c2-4 5-5 9-3" stroke="currentColor" stroke-width="2.2"/>
+                    <path d="M38 44c6 6 14 5 18 2" stroke="currentColor" stroke-width="2.2"/>
+                  </svg>
+                </div>
+
+                <div class="flip-front-footer">
+                  <span class="flip-step-meta">Step 02 &bull; Curation</span>
+                  <h3 class="flip-step-title">Palette &amp; Yarn</h3>
+                </div>
+              </div>
+
+              <!-- Back Face (Deep Forest Slate) -->
+              <div class="flip-card-back">
+                <div class="flip-back-header">
+                  <span class="flip-back-num">02</span>
+                  <span class="flip-back-phase">Materials</span>
+                </div>
+                <div class="flip-back-content">
+                  <h3 class="flip-back-title">Palette &amp; Yarn</h3>
+                  <p class="flip-back-desc">
+                    Together, we select textures and harmonize custom color tones from natural cottons, velvety chenille, and wool blends.
+                  </p>
+                  <ul class="flip-features-list">
+                    <li><span class="flip-check">&#10003;</span> Hypoallergenic premium yarns</li>
+                    <li><span class="flip-check">&#10003;</span> Photo swatch matching on WhatsApp</li>
+                  </ul>
+                </div>
+                <div class="flip-back-footer">
+                  <button type="button" class="flip-back-btn" aria-label="Tap to flip back to front">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2.5 2v6h6M2.66 15.57a10 10 0 1 0 .57-8.38l-5.67-5.19"/>
+                    </svg>
+                    <span>Tap to flip back</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Step 3 Flip Card (Terracotta Clay & Umber) -->
+          <div class="custom-flip-card flip-card-step3" tabindex="0" role="button" aria-label="Step 3: Patient Crafting. Click or hover to flip.">
+            <div class="flip-card-inner">
+              
+              <!-- Front Face -->
+              <div class="flip-card-front">
+                <div class="flip-front-header">
+                  <span class="flip-step-num">03</span>
+                  <button type="button" class="flip-pill-badge" aria-label="Flip card to view details">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+                    </svg>
+                    <span>Flip</span>
+                  </button>
+                </div>
+                
+                <div class="flip-card-illustration">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 50L46 18c3-3 7-3 10 0s3 7 0 10L24 60" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                    <path d="M18 42c-4-4-5-9-1-13s11-2 15 2 3 9-1 13" stroke="currentColor" stroke-width="2.2"/>
+                    <circle cx="21" cy="25" r="2" fill="currentColor"/>
+                  </svg>
+                </div>
+
+                <div class="flip-front-footer">
+                  <span class="flip-step-meta">Step 03 &bull; Creation</span>
+                  <h3 class="flip-step-title">Patient Crafting</h3>
+                </div>
+              </div>
+
+              <!-- Back Face (Deep Roasted Umber) -->
+              <div class="flip-card-back">
+                <div class="flip-back-header">
+                  <span class="flip-back-num">03</span>
+                  <span class="flip-back-phase">Artisanry</span>
+                </div>
+                <div class="flip-back-content">
+                  <h3 class="flip-back-title">Patient Crafting</h3>
+                  <p class="flip-back-desc">
+                    Every stitch is shaped patiently by human hands without shortcuts. We keep you connected with progress snapshots.
+                  </p>
+                  <ul class="flip-features-list">
+                    <li><span class="flip-check">&#10003;</span> 100% human stitched craftsmanship</li>
+                    <li><span class="flip-check">&#10003;</span> WIP progress snapshots sent directly</li>
+                  </ul>
+                </div>
+                <div class="flip-back-footer">
+                  <button type="button" class="flip-back-btn" aria-label="Tap to flip back to front">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2.5 2v6h6M2.66 15.57a10 10 0 1 0 .57-8.38l-5.67-5.19"/>
+                    </svg>
+                    <span>Tap to flip back</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Step 4 Flip Card (Sandstone Khaki & Dark Cedar) -->
+          <div class="custom-flip-card flip-card-step4" tabindex="0" role="button" aria-label="Step 4: Safe Delivery. Click or hover to flip.">
+            <div class="flip-card-inner">
+              
+              <!-- Front Face -->
+              <div class="flip-card-front">
+                <div class="flip-front-header">
+                  <span class="flip-step-num">04</span>
+                  <button type="button" class="flip-pill-badge" aria-label="Flip card to view details">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+                    </svg>
+                    <span>Flip</span>
+                  </button>
+                </div>
+                
+                <div class="flip-card-illustration">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="12" y="24" width="40" height="30" rx="3" fill="rgba(255,255,255,0.7)" stroke="currentColor" stroke-width="2.2"/>
+                    <rect x="8" y="16" width="48" height="10" rx="2" fill="#FFFFFF" stroke="currentColor" stroke-width="2.2"/>
+                    <line x1="32" y1="16" x2="32" y2="54" stroke="currentColor" stroke-width="2.2"/>
+                    <path d="M32 16c-5-5-10-5-10 0s7 3 10 0" stroke="currentColor" stroke-width="2.2"/>
+                    <path d="M32 16c5-5 10-5 10 0s-7 3-10 0" stroke="currentColor" stroke-width="2.2"/>
+                  </svg>
+                </div>
+
+                <div class="flip-front-footer">
+                  <span class="flip-step-meta">Step 04 &bull; Fulfillment</span>
+                  <h3 class="flip-step-title">Safe Delivery</h3>
+                </div>
+              </div>
+
+              <!-- Back Face (Deep Cedar Bronze) -->
+              <div class="flip-card-back">
+                <div class="flip-back-header">
+                  <span class="flip-back-num">04</span>
+                  <span class="flip-back-phase">Dispatched</span>
+                </div>
+                <div class="flip-back-content">
+                  <h3 class="flip-back-title">Safe Delivery</h3>
+                  <p class="flip-back-desc">
+                    Your bespoke piece is carefully packaged with protective eco friendly wrapping and dispatched directly to your doorstep.
+                  </p>
+                  <ul class="flip-features-list">
+                    <li><span class="flip-check">&#10003;</span> Protective aesthetic gift packaging</li>
+                    <li><span class="flip-check">&#10003;</span> All India doorstep delivery tracking</li>
+                  </ul>
+                </div>
+                <div class="flip-back-footer">
+                  <button type="button" class="flip-back-btn" aria-label="Tap to flip back to front">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2.5 2v6h6M2.66 15.57a10 10 0 1 0 .57-8.38l-5.67-5.19"/>
+                    </svg>
+                    <span>Tap to flip back</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Single Dedicated WhatsApp Custom Order Button -->
+        <div class="custom-order-action reveal delay-1">
+          <a href="https://wa.me/918980536677?text=Hi%20Aurova%20Handmade,%20I'd%20love%20to%20start%20a%20custom%20order!" 
+             class="btn-whatsapp-large" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.68 7.49 8.44 7.75C8.2 8.01 7.52 8.65 7.52 9.94C7.52 11.23 8.46 12.47 8.59 12.65C8.72 12.83 10.42 15.45 13.01 16.57C13.63 16.84 14.11 17 14.49 17.12C15.11 17.32 15.68 17.29 16.12 17.23C16.62 17.15 17.65 16.6 17.86 16C18.08 15.4 18.08 14.88 18.01 14.78C17.94 14.68 17.77 14.62 17.51 14.49C17.25 14.36 15.98 13.73 15.74 13.64C15.5 13.51 15.34 13.51 15.16 13.77C14.99 14.03 14.49 14.62 14.34 14.79C14.19 14.96 14.04 14.98 13.78 14.85C13.52 14.72 12.7 14.45 11.72 13.58C10.96 12.9 10.44 12.06 10.3 11.8C10.15 11.54 10.28 11.4 10.41 11.27C10.53 11.15 10.68 10.96 10.81 10.81C10.94 10.66 10.99 10.55 11.08 10.38C11.16 10.21 11.12 10.06 11.06 9.94C11 9.81 10.49 8.57 10.28 8.06C10.08 7.57 9.87 7.64 9.71 7.63C9.56 7.62 9.38 7.42 9.16 7.42Z"/>
+            </svg>
+            Start a Custom Order on WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =======================================================================
+         4. CONTACT SECTION
+         Clean direct cards: WhatsApp, Instagram, Pinterest
+         ======================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <h2 class="section-title">Get in <span class="hollow-word">Touch</span></h2>
+          <p class="section-subtitle">
+            We would love to hear from you. Order directly or connect with our studio across our official channels.
+          </p>
+        </div>
+
+        <div class="contact-grid-3">
+          
+          <!-- Channel 1: WhatsApp -->
+          <a href="https://wa.me/918980536677" class="contact-card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.68 7.49 8.44 7.75C8.2 8.01 7.52 8.65 7.52 9.94C7.52 11.23 8.46 12.47 8.59 12.65C8.72 12.83 10.42 15.45 13.01 16.57C13.63 16.84 14.11 17 14.49 17.12C15.11 17.32 15.68 17.29 16.12 17.23C16.62 17.15 17.65 16.6 17.86 16C18.08 15.4 18.08 14.88 18.01 14.78C17.94 14.68 17.77 14.62 17.51 14.49C17.25 14.36 15.98 13.73 15.74 13.64C15.5 13.51 15.34 13.51 15.16 13.77C14.99 14.03 14.49 14.62 14.34 14.79C14.19 14.96 14.04 14.98 13.78 14.85C13.52 14.72 12.7 14.45 11.72 13.58C10.96 12.9 10.44 12.06 10.3 11.8C10.15 11.54 10.28 11.4 10.41 11.27C10.53 11.15 10.68 10.96 10.81 10.81C10.94 10.66 10.99 10.55 11.08 10.38C11.16 10.21 11.12 10.06 11.06 9.94C11 9.81 10.49 8.57 10.28 8.06C10.08 7.57 9.87 7.64 9.71 7.63C9.56 7.62 9.38 7.42 9.16 7.42Z"/>
+              </svg>
+            </div>
+            <h3 class="contact-name">WhatsApp</h3>
+            <span class="contact-handle">+91 8980536677</span>
+            <span class="contact-cta-link">Direct Studio Chat &rarr;</span>
+          </a>
+
+          <!-- Channel 2: Instagram -->
+          <a href="https://www.instagram.com/aurova_handmade/" class="contact-card reveal delay-1" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <h3 class="contact-name">Instagram</h3>
+            <span class="contact-handle">@aurova_handmade</span>
+            <span class="contact-cta-link">Follow Studio Stories &rarr;</span>
+          </a>
+
+          <!-- Channel 3: Pinterest -->
+          <a href="https://in.pinterest.com/AurovaHandmade/_created/" class="contact-card reveal delay-2" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.98-.12-2.5.02-3.58l1.04-4.42s-.26-.53-.26-1.32c0-1.24.72-2.16 1.62-2.16.76 0 1.13.57 1.13 1.26 0 .77-.49 1.92-.74 2.98-.21.9.45 1.63 1.34 1.63 1.61 0 2.85-1.7 2.85-4.15 0-2.17-1.56-3.69-3.79-3.69-2.58 0-4.1 1.94-4.1 3.94 0 .78.3 1.62.68 2.07.07.09.08.17.06.26l-.26 1.05c-.04.17-.14.2-.32.12-1.2-.56-1.95-2.31-1.95-3.72 0-3.03 2.2-5.81 6.35-5.81 3.33 0 5.92 2.38 5.92 5.56 0 3.32-2.09 5.98-4.99 5.98-.98 0-1.9-.51-2.21-1.11l-.6 2.3c-.22.84-.81 1.9-1.21 2.54A12 12 0 1 0 12 0z"/>
+              </svg>
+            </div>
+            <h3 class="contact-name">Pinterest</h3>
+            <span class="contact-handle">Aurova Handmade</span>
+            <span class="contact-cta-link">View Moodboards &rarr;</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================================
+       5. FOOTER: 2-LINE STACKED DISPLAY TEXT MATCHING USER ATTACHED IMAGE
+       AUROVA (line 1)
+       HANDMADE (line 2)
+       Each letter gradually fills with vibrant artistic yarn colors while preserving black outline
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- Big Aurova Handmade Headline Display: 2-Line Stacking as in reference image -->
+      <div class="giant-footer-display" aria-label="AUROVA HANDMADE">
+        <div class="footer-line">
+          <span class="footer-letter" data-color="#FF5252">A</span><span class="footer-letter" data-color="#FF7A00">U</span><span class="footer-letter" data-color="#FFB300">R</span><span class="footer-letter" data-color="#4CAF50">O</span><span class="footer-letter" data-color="#00BCD4">V</span><span class="footer-letter" data-color="#2196F3">A</span>
+        </div>
+        <div class="footer-line">
+          <span class="footer-letter" data-color="#9C27B0">H</span><span class="footer-letter" data-color="#E91E63">A</span><span class="footer-letter" data-color="#FF5722">N</span><span class="footer-letter" data-color="#009688">D</span><span class="footer-letter" data-color="#3F51B5">M</span><span class="footer-letter" data-color="#FF9800">A</span><span class="footer-letter" data-color="#8BC34A">D</span><span class="footer-letter" data-color="#E040FB">E</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#about">About Us</a>
+        <a href="#products">Our Products</a>
+        <a href="#custom-orders">Custom Orders</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Aurova Handmade. Where every stitch finds its own little light.</p>
+        <a href="#about" class="back-to-top-btn" aria-label="Back to top">
+          Back to top &uarr;
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       6. PRODUCT IMAGE LIGHTBOX MODAL (ENLARGED PRODUCT VIEW)
+       Responsive, touch-swipe enabled, keyboard accessible, with WhatsApp CTA
+       ========================================================================= -->
+  <div class="product-lightbox" id="product-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enlarged Product View">
+    <div class="lightbox-overlay" id="lightbox-overlay" tabindex="-1"></div>
+    
+    <div class="lightbox-dialog" role="document">
+      <!-- Close Button -->
+      <button class="lightbox-btn-close" id="lightbox-close" aria-label="Close enlarged product view">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Previous Arrow Button -->
+      <button class="lightbox-btn-nav lightbox-btn-prev" id="lightbox-prev" aria-label="Previous product image">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Main Image Card -->
+      <div class="lightbox-card">
+        <div class="lightbox-img-wrapper">
+          <img src="" alt="" class="lightbox-image" id="lightbox-image">
+        </div>
+        <div class="lightbox-bar">
+          <div class="lightbox-text-group">
+            <span class="lightbox-counter" id="lightbox-counter">1 / 5</span>
+            <h3 class="lightbox-title" id="lightbox-title">Product Title</h3>
+          </div>
+          <a href="https://wa.me/918980536677" target="_blank" rel="noopener noreferrer" class="lightbox-wa-btn" id="lightbox-wa-btn" aria-label="Inquire about this product on WhatsApp">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.68 7.49 8.44 7.75C8.2 8.01 7.52 8.65 7.52 9.94C7.52 11.23 8.46 12.47 8.59 12.65C8.72 12.83 10.42 15.45 13.01 16.57C13.63 16.84 14.11 17 14.49 17.12C15.11 17.32 15.68 17.29 16.12 17.23C16.62 17.15 17.65 16.6 17.86 16C18.08 15.4 18.08 14.88 18.01 14.78C17.94 14.68 17.77 14.62 17.51 14.49C17.25 14.36 15.98 13.73 15.74 13.64C15.5 13.51 15.34 13.51 15.16 13.77C14.99 14.03 14.49 14.62 14.34 14.79C14.19 14.96 14.04 14.98 13.78 14.85C13.52 14.72 12.7 14.45 11.72 13.58C10.96 12.9 10.44 12.06 10.3 11.8C10.15 11.54 10.28 11.4 10.41 11.27C10.53 11.15 10.68 10.96 10.81 10.81C10.94 10.66 10.99 10.55 11.08 10.38C11.16 10.21 11.12 10.06 11.06 9.94C11 9.81 10.49 8.57 10.28 8.06C10.08 7.57 9.87 7.64 9.71 7.63C9.56 7.62 9.38 7.42 9.16 7.42Z"/>
+            </svg>
+            <span>Inquire on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Next Arrow Button -->
+      <button class="lightbox-btn-nav lightbox-btn-next" id="lightbox-next" aria-label="Next product image">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
